@@ -130,11 +130,10 @@ def peon(job_q, result_q):
 
 
 
-def capitalize(word):
-    """Capitalizes the word you pass in and returns it"""
-    return word.upper()
-
 if __name__ == '__main__':
+    def capitalize(word):
+        """Capitalizes the word you pass in and returns it"""
+        return word.upper()
     data = ["Always", "look", "on", "the", "bright", "side", "of", "life!"]
     server = mp.Process(target=runserver, args=(capitalize, data))
     server.start()

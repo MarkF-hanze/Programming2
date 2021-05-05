@@ -3,7 +3,9 @@ import multiprocessing as mp
 import xml.etree.cElementTree as ET
 import sys
 
-
+import time
+import getopt
+import Server
 Entrez.api_key = 'b1d6e58f788c2d50eef028a909f4971d9508'
 Entrez.email = 'mark.leendert@gmail.com'
 
@@ -27,16 +29,7 @@ def download_paper(download_id):
     tree = ET.parse(handle)
     tree.write(f'output/{download_id}.xml')
 
-import getopt
 if __name__ == '__main__':
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument('-n')
-    # parser.add_argument('-c', action='count')
-    # parser.add_argument('-s', action='count')
-    # parser.add_argument('-p')
-    # parser.add_argument('-a')
-    # #parser.add_argument('-h')
-    # print(parser)
     argumentList = sys.argv[1:]
     # python assignment2.py -n 5 -s -p 2 -h "localhost" -a 12 "312412"
     # Options
@@ -47,7 +40,7 @@ if __name__ == '__main__':
         if o == "-n":
             number_of_children = a
         elif  o == "-p":
-            portnumber = a
+            Server.PORTNUM = a
         elif o == "-h":
             hosts = a
         elif o == "-a":
@@ -63,18 +56,20 @@ if __name__ == '__main__':
         sys.exit()
 
     print(f'number of childeren = {number_of_children}')
-    print(f'Portnumber = {portnumber}')
+    print(f'Portnumber = {Server.PORTNUM}')
     print(f'Hosts = {hosts}')
     print(f'Number of articals = {number_of_articles}')
     print(f"Mode = {mode}")
     print(f"Article to download = {args[0]}")
-    #args = parser.parse_args()
-
-    # user_id = str(sys.argv[1])
-    # citations = get_citations(user_id)
-    # citations = citations[:min(10, len(citations)-1)]
-    # cpu_count = mp.cpu_count()
-    # with mp.Pool(processes=cpu_count) as pool:
-    #     pool.map(download_paper, citations)
-
-
+    data = get_citations(args[0])
+    data = data[:max(number_of_articles, len(data))]
+    if mode == 'server':
+        server = mp.Process(target=Server.runserver, args=(download_paper, data))
+        server.start()
+        time.sleep(1)
+        server.join()
+    if mode == 'client':
+        client = mp.Process(target=Server.runclient, args=(number_of_children,))
+        client.start()
+        time.sleep(1)
+        client.join()
