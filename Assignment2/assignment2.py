@@ -159,7 +159,7 @@ def download_paper(download_id):
 
 if __name__ == '__main__':
     argumentList = sys.argv[1:]
-    # python3 assignment2.py -n 5 -s -p 2 -h "localhost" -a 12 "30797674"
+    # python3 assignment2.py -n 2 -s -p 5381 -h "localhost" -a 20 "30797674"
     # Options
     options = "n:csp:h:a:"
     opts, args = getopt.getopt(argumentList, options)
@@ -189,13 +189,11 @@ if __name__ == '__main__':
     print(f'Number of articals = {number_of_articles}')
     print(f"Mode = {mode}")
     print(f"Article to download = {args[0]}")
-    data = get_citations(args[0])
-    print(data)
-    data = data[:max(number_of_articles, len(data))]
     if mode == 'server':
+        data = get_citations(args[0])
+        data = data[:max(number_of_articles, len(data))]
         server = mp.Process(target=runserver, args=(download_paper, data))
         server.start()
-        print(3)
         time.sleep(1)
         server.join()
     if mode == 'client':
