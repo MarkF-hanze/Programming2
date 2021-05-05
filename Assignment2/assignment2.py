@@ -31,20 +31,20 @@ def download_paper(download_id):
 
 if __name__ == '__main__':
     argumentList = sys.argv[1:]
-    # python assignment2.py -n 5 -s -p 2 -h "localhost" -a 12 "312412"
+    # python3 assignment2.py -n 5 -s -p 2 -h "localhost" -a 12 "30797674"
     # Options
     options = "n:csp:h:a:"
     opts, args = getopt.getopt(argumentList, options)
     modes = 0
     for o, a in opts:
         if o == "-n":
-            number_of_children = a
+            number_of_children = int(a)
         elif  o == "-p":
-            Server.PORTNUM = a
+            Server.PORTNUM =int(a)
         elif o == "-h":
-            hosts = a
+            hosts = str(a)
         elif o == "-a":
-            number_of_articles = a
+            number_of_articles = int(a)
         elif o == '-s':
             mode = 'server'
             modes += 1
@@ -62,12 +62,14 @@ if __name__ == '__main__':
     print(f"Mode = {mode}")
     print(f"Article to download = {args[0]}")
     data = get_citations(args[0])
+    print(data)
     data = data[:max(number_of_articles, len(data))]
     if mode == 'server':
         server = mp.Process(target=Server.runserver, args=(download_paper, data))
         server.start()
+        print(3)
         time.sleep(1)
-        server.join()
+#        server.join()
     if mode == 'client':
         client = mp.Process(target=Server.runclient, args=(number_of_children,))
         client.start()
