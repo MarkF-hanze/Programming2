@@ -1,0 +1,203 @@
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Owner="NLM" Status="MEDLINE">
+        <PMID Version="1">10653864</PMID>
+        <DateCompleted>
+            <Year>2000</Year>
+            <Month>02</Month>
+            <Day>29</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>10</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Print">0732-183X</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>18</Volume>
+                    <Issue>3</Issue>
+                    <PubDate>
+                        <Year>2000</Year>
+                        <Month>Feb</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Journal of clinical oncology : official journal of the American Society of Clinical Oncology</Title>
+                <ISOAbbreviation>J Clin Oncol</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Long-term risk of second malignancy in survivors of Hodgkin's disease treated during adolescence or young adulthood.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>487-97</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText Label="PURPOSE" NlmCategory="OBJECTIVE">To quantify the long-term risk of second primary cancers (SCs) in patients diagnosed with Hodgkin's disease (HD) during adolescence or young adulthood.</AbstractText>
+                <AbstractText Label="PATIENTS AND METHODS" NlmCategory="METHODS">The risk of SCs was assessed in 1,253 patients diagnosed with HD before the age of 40 years and treated in two Dutch cancer centers between 1966 and 1986. The median follow-up duration was 14.1 years.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">In all, 137 patients developed SCs, compared with 19.4 cases expected on the basis of incidence rates in the general population (relative risk [RR] = 7.0; 95% confidence interval, 5.9 to 8.3). The 25-year actuarial risk of SC overall was 27.7%. The RR of solid tumors increased greatly with younger age at the first treatment of HD, not only for breast cancer but also for all other solid tumors, with RRs of 4.9, 6.9, and 12.7 for patients first treated at ages 31 to 39 years, 21 to 30 years, and &lt;/= 20 years, respectively. Among patients first treated at the age of 20 years or younger, the RR of developing a solid tumor before the age of 40 years was significantly greater than the RR of solid tumor development at ages 40 to 49 years (RR = 27.9 v RR = 4.2; P =.0001). Patients who received salvage chemotherapy had significantly greater risk of solid cancers other than breast cancer than did patients whose treatment was restricted to initial radiotherapy or initial combined-modality treatment (RR = 9.4 and 4.7, respectively; P =. 004).</AbstractText>
+                <AbstractText Label="CONCLUSION" NlmCategory="CONCLUSIONS">After more than 20 years of follow-up, the risk of solid tumors is still much greater in survivors of HD than in the population at large. Reassuringly, the greatly increased risk of solid tumors in patients who were young (&lt;/= 20 years of age) at the first treatment seems to decrease as these patients grow older. Our data suggest that chemotherapy may increase the risk of solid tumors from radiotherapy.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>van Leeuwen</LastName>
+                    <ForeName>F E</ForeName>
+                    <Initials>FE</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Departments of Epidemiology, Medical Oncology, Radiotherapy, and Pathology, The Netherlands Cancer Institute, Amsterdam, The Netherlands. fvleeuw@nki.nl</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Klokman</LastName>
+                    <ForeName>W J</ForeName>
+                    <Initials>WJ</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Veer</LastName>
+                    <ForeName>M B</ForeName>
+                    <Initials>MB</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hagenbeek</LastName>
+                    <ForeName>A</ForeName>
+                    <Initials>A</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Krol</LastName>
+                    <ForeName>A D</ForeName>
+                    <Initials>AD</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Vetter</LastName>
+                    <ForeName>U A</ForeName>
+                    <Initials>UA</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Schaapveld</LastName>
+                    <ForeName>M</ForeName>
+                    <Initials>M</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>van Heerde</LastName>
+                    <ForeName>P</ForeName>
+                    <Initials>P</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Burgers</LastName>
+                    <ForeName>J M</ForeName>
+                    <Initials>JM</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Somers</LastName>
+                    <ForeName>R</ForeName>
+                    <Initials>R</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Aleman</LastName>
+                    <ForeName>B M</ForeName>
+                    <Initials>BM</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D003160">Comparative Study</PublicationType>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016448">Multicenter Study</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>J Clin Oncol</MedlineTA>
+            <NlmUniqueID>8309333</NlmUniqueID>
+            <ISSNLinking>0732-183X</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="CommentIn">
+                <RefSource>J Clin Oncol. 2000 May;18(10):2186-7</RefSource>
+                <PMID Version="1">10811685</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000293">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000328">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000367">Age Factors</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000971">Antineoplastic Combined Chemotherapy Protocols</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000627">therapeutic use</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D005260">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D005500">Follow-Up Studies</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D006689">Hodgkin Disease</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000188">drug therapy</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000532">radiotherapy</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D006801">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008297">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D016609">Neoplasms, Second Primary</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000453">epidemiology</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000209">etiology</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000473">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D011379">Prognosis</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D016016">Proportional Hazards Models</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D012307">Risk Factors</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D013997">Time Factors</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2000</Year>
+                <Month>2</Month>
+                <Day>2</Day>
+                <Hour>9</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2000</Year>
+                <Month>3</Month>
+                <Day>4</Day>
+                <Hour>9</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2000</Year>
+                <Month>2</Month>
+                <Day>2</Day>
+                <Hour>9</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">10653864</ArticleId>
+            <ArticleId IdType="doi">10.1200/JCO.2000.18.3.487</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

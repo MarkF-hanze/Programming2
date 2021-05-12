@@ -1,0 +1,431 @@
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Owner="NLM" Status="MEDLINE">
+        <PMID Version="1">1581717</PMID>
+        <DateCompleted>
+            <Year>1992</Year>
+            <Month>06</Month>
+            <Day>17</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2019</Year>
+            <Month>05</Month>
+            <Day>01</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Print">0959-8138</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>304</Volume>
+                    <Issue>6832</Issue>
+                    <PubDate>
+                        <Year>1992</Year>
+                        <Month>Apr</Month>
+                        <Day>11</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>BMJ (Clinical research ed.)</Title>
+                <ISOAbbreviation>BMJ</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Epipodophyllotoxins, alkylating agents, and radiation and risk of secondary leukaemia after childhood cancer.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>951-8</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText Label="OBJECTIVE" NlmCategory="OBJECTIVE">To investigate the incidence and aetiology of secondary leukaemia after childhood cancer in Britain.</AbstractText>
+                <AbstractText Label="DESIGN" NlmCategory="METHODS">Cohort study and a case-control study.</AbstractText>
+                <AbstractText Label="SETTING" NlmCategory="METHODS">Britain and population based National Register of Childhood Tumours.</AbstractText>
+                <AbstractText Label="SUBJECTS" NlmCategory="METHODS">Cohort of 16,422 one year survivors of childhood cancer diagnosed in Britain between 1962 and 1983, among whom 22 secondary leukaemias were observed. A case-control study of 26 secondary leukaemias observed among survivors of childhood cancer diagnosed in Britain between 1940 and 1983; 96 controls were selected matched for sex, type of first cancer, age at first cancer, and interval to diagnosis of secondary leukaemia.</AbstractText>
+                <AbstractText Label="MAIN OUTCOME MEASURES" NlmCategory="METHODS">Dose of radiation averaged over patients' active bone marrow and total accumulated dose of epipodophyllotoxins, alkylating agents, vinca alkaloids, antimetabolites, and antibiotics (mg/m2) given for the original cancer.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">Cumulative risk of secondary leukaemia within the cohort did not exceed 0.5% over the initial five years beyond one year survival, except that after non-Hodgkin's lymphomas 1.4% of patients developed secondary leukaemia. Corresponding figure for patients treated for non-Hodgkin's lymphomas in the early 1980s was 4%. The relative risk of secondary leukaemia increased significantly with exposure to epipodophyllotoxins and dose of radiation averaged over patients' active bone marrow. Ten patients developed leukaemia after having an epipodophyllotoxin-teniposide in nine cases, etoposide in one. Chromosomal translocations involving 11q23 were observed relating to two secondary leukaemias from a total of six for which there were successful cytogenetic studies after administration of an epipodophyllotoxin.</AbstractText>
+                <AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">Epipodophyllotoxins acting alone or together with alkylating agents or radiation seem to be involved in secondary leukaemia after childhood cancer.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Hawkins</LastName>
+                    <ForeName>M M</ForeName>
+                    <Initials>MM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Childhood Cancer Research Group, University of Oxford.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wilson</LastName>
+                    <ForeName>L M</ForeName>
+                    <Initials>LM</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Stovall</LastName>
+                    <ForeName>M A</ForeName>
+                    <Initials>MA</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Marsden</LastName>
+                    <ForeName>H B</ForeName>
+                    <Initials>HB</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Potok</LastName>
+                    <ForeName>M H</ForeName>
+                    <Initials>MH</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kingston</LastName>
+                    <ForeName>J E</ForeName>
+                    <Initials>JE</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Chessells</LastName>
+                    <ForeName>J M</ForeName>
+                    <Initials>JM</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>BMJ</MedlineTA>
+            <NlmUniqueID>8900488</NlmUniqueID>
+            <ISSNLinking>0959-8138</ISSNLinking>
+        </MedlineJournalInfo>
+        <ChemicalList>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="D000477">Alkylating Agents</NameOfSubstance>
+            </Chemical>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="D000970">Antineoplastic Agents</NameOfSubstance>
+            </Chemical>
+            <Chemical>
+                <RegistryNumber>L36H50F353</RegistryNumber>
+                <NameOfSubstance UI="D011034">Podophyllotoxin</NameOfSubstance>
+            </Chemical>
+        </ChemicalList>
+        <CitationSubset>AIM</CitationSubset>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000477">Alkylating Agents</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000009">adverse effects</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000970">Antineoplastic Agents</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000009">adverse effects</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D001853">Bone Marrow</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000187">drug effects</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000528">radiation effects</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D016022">Case-Control Studies</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D002648">Child</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D015331">Cohort Studies</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D004305">Dose-Response Relationship, Drug</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D004307">Dose-Response Relationship, Radiation</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D006801">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D007938">Leukemia</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000209">etiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D016609">Neoplasms, Second Primary</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000209">etiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D011034">Podophyllotoxin</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000009">adverse effects</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D011878">Radiotherapy</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000009">adverse effects</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D012307">Risk Factors</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>1992</Year>
+                <Month>4</Month>
+                <Day>11</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>1992</Year>
+                <Month>4</Month>
+                <Day>11</Day>
+                <Hour>0</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>1992</Year>
+                <Month>4</Month>
+                <Day>11</Day>
+                <Hour>0</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">1581717</ArticleId>
+            <ArticleId IdType="pmc">PMC1882326</ArticleId>
+            <ArticleId IdType="doi">10.1136/bmj.304.6832.951</ArticleId>
+        </ArticleIdList>
+        <ReferenceList>
+            <Reference>
+                <Citation>Cancer Genet Cytogenet. 1990 Mar;45(1):1-11</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">2302676</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 1991 Aug 10;338(8763):359-63</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">1713639</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>N Engl J Med. 1990 Jan 4;322(1):1-6</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">2104664</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Natl Cancer Inst. 1984 Mar;72(3):531-44</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">6583439</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>N Engl J Med. 1983 Nov 3;309(18):1079-84</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">6353233</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Br J Cancer. 1977 Jan;35(1):1-39</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">831755</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Cancer. 1991 Aug 1;68(3):600-4</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">1648435</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>N Engl J Med. 1991 Dec 12;325(24):1682-7</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">1944468</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 1990 Nov 3;336(8723):1130-1</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">1978004</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Br J Cancer. 1987 Apr;55(4):463-6</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3495284</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Int J Cancer. 1987 May 15;39(5):571-85</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3570550</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Natl Cancer Inst. 1987 Mar;78(3):459-64</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3469460</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>N Engl J Med. 1988 Jan 14;318(2):76-81</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3336397</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Blood. 1988 Feb;71(2):403-14</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3337904</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Blood. 1987 Nov;70(5):1412-7</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">2822173</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Br J Cancer. 1987 Sep;56(3):339-47</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">2822073</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Med Phys. 1989 Sep-Oct;16(5):726-33</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">2509867</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Ann Intern Med. 1989 May 1;110(9):740-2</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">2648930</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>N Engl J Med. 1989 Jul 20;321(3):136-42</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">2787477</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Br J Cancer. 1989 May;59(5):792-6</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">2736215</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Cancer Genet Cytogenet. 1988 May;32(1):1-10</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3355991</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Cancer Res. 1984 Dec;44(12 Pt 1):5857-60</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">6094001</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Br J Cancer. 1984 Oct;50(4):457-62</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">6333247</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Br J Cancer. 1987 May;55(5):523-9</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3300761</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Clin Lab Haematol. 1986;8(1):71-5</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3522056</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Br J Cancer. 1984 Oct;50(4):463-9</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">6487515</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Natl Cancer Inst. 1987 Dec;79(6):1295-311</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3480381</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 1986 Oct;4(10):1518-20</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3463672</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Br J Cancer. 1987 Feb;55(2):213-8</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3814491</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 1986 Dec;4(12):1748-57</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3783201</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Ann Intern Med. 1986 Sep;105(3):360-7</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3740675</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Am J Epidemiol. 1986 Jun;123(6):993-1003</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3706285</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 1986 Mar;4(3):325-45</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3950675</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Med Pediatr Oncol. 1985;13(1):48-50</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3855498</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Cancer Res. 1985 Jul;45(7):3106-12</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">3839166</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 1990 Aug 18;336(8712):417-21</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">1974952</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Cancer. 1991 Apr 1;67(7):2002-9</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">2004317</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>BMJ. 1990 Nov 10;301(6760):1077-80</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">2249071</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>N Engl J Med. 1990 Jan 4;322(1):7-13</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">2403650</ArticleId>
+                </ArticleIdList>
+            </Reference>
+        </ReferenceList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

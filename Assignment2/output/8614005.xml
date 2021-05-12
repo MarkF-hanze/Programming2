@@ -1,0 +1,193 @@
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Owner="NLM" Status="MEDLINE">
+        <PMID Version="1">8614005</PMID>
+        <DateCompleted>
+            <Year>1996</Year>
+            <Month>05</Month>
+            <Day>31</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2019</Year>
+            <Month>05</Month>
+            <Day>12</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Print">0027-8874</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>88</Volume>
+                    <Issue>5</Issue>
+                    <PubDate>
+                        <Year>1996</Year>
+                        <Month>Mar</Month>
+                        <Day>06</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Journal of the National Cancer Institute</Title>
+                <ISOAbbreviation>J Natl Cancer Inst</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Radiotherapy, alkylating agents, and risk of bone cancer after childhood cancer.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>270-8</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Individuals who had cancer in childhood are at higher risk of developing bone cancer than any other type of second primary cancer.</AbstractText>
+                <AbstractText Label="PURPOSE" NlmCategory="OBJECTIVE">Using the population-based National Registry of Childhood Tumours in Britain, we investigated the incidence and etiology of second primary bone cancer after childhood cancer in a cohort study and in a case-control study.</AbstractText>
+                <AbstractText Label="METHODS" NlmCategory="METHODS">A cohort study of 13,175 3-year survivors of childhood cancer diagnosed in Britain between 1940 and 1983 revealed 55 subsequent bone cancers. A largely nested case-control study comprised 59 case subjects developing second primary bone cancer, and 220 control subjects were selected and matched for sex, type of first cancer, age at first cancer, and interval between diagnosis of first cancer and subsequent bone cancer. Outcome measures were the incidence of bone cancer after childhood cancer, the cumulative dose of radiation received at the site of the second cancer in the case subject and at the corresponding anatomic site in the matched control subjects, and the cumulative dose of alkylating agents and vinca alkaloids received by case and control subjects.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">The percentage of 3-year survivors developing bone cancer within 20 years did not exceed 0.9%, except following heritable retinoblastoma (7.2%), Ewing's sarcoma (5.4%), and other malignant bone tumors (2.4%). The risk of bone cancer increased substantially with increased cumulative dose of radiation to the bone (P&lt; .001, linear trend). At the highest levels of exposure, however, the risk appeared to decline somewhat (P=.065, nonlinearity). Exposure to less than 10 Gy was at worst, associated with only a small increased relative risk (RR) of bone cancer (RR= 0.7; 95% confidence interval = 0.2-2.2). The risk of bone cancer increased linearly (P= .04, one-tailed test) with increased cumulative dose of alkylating agents.</AbstractText>
+                <AbstractText Label="IMPLICATIONS" NlmCategory="CONCLUSIONS">This population-based study provides grounds for reassurance of the majority of survivors in that their risk of developing bone cancer within 20 years of 3-year survival did not exceed 0.9%. The higher risks found for bone cancer following the other specific rare types of childhood cancer provide a rational basis for surveillance. The RRs reported for bone cancer after specified levels of exposure to radiation should help in making decisions concerning future treatment protocols.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Hawkins</LastName>
+                    <ForeName>M M</ForeName>
+                    <Initials>MM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Childhood Cancer Research Group, University of Oxford, U.K.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wilson</LastName>
+                    <ForeName>L M</ForeName>
+                    <Initials>LM</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Burton</LastName>
+                    <ForeName>H S</ForeName>
+                    <Initials>HS</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Potok</LastName>
+                    <ForeName>M H</ForeName>
+                    <Initials>MH</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Winter</LastName>
+                    <ForeName>D L</ForeName>
+                    <Initials>DL</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Marsden</LastName>
+                    <ForeName>H B</ForeName>
+                    <Initials>HB</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Stovall</LastName>
+                    <ForeName>M A</ForeName>
+                    <Initials>MA</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>J Natl Cancer Inst</MedlineTA>
+            <NlmUniqueID>7503089</NlmUniqueID>
+            <ISSNLinking>0027-8874</ISSNLinking>
+        </MedlineJournalInfo>
+        <ChemicalList>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="D018906">Antineoplastic Agents, Alkylating</NameOfSubstance>
+            </Chemical>
+        </ChemicalList>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000293">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000328">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D018906">Antineoplastic Agents, Alkylating</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000009">adverse effects</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D001859">Bone Neoplasms</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000209">etiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D016022">Case-Control Studies</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D002648">Child</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D002675">Child, Preschool</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D015331">Cohort Studies</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D005260">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D006801">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D007223">Infant</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D007231">Infant, Newborn</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008297">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D016609">Neoplasms, Second Primary</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000209">etiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D011878">Radiotherapy</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000009">adverse effects</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D012175">Retinoblastoma</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000628">therapy</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D012306">Risk</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D012512">Sarcoma, Ewing</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000628">therapy</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>1996</Year>
+                <Month>3</Month>
+                <Day>6</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>1996</Year>
+                <Month>3</Month>
+                <Day>6</Day>
+                <Hour>0</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>1996</Year>
+                <Month>3</Month>
+                <Day>6</Day>
+                <Hour>0</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">8614005</ArticleId>
+            <ArticleId IdType="doi">10.1093/jnci/88.5.270</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

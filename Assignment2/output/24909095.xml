@@ -1,0 +1,196 @@
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Owner="NLM" Status="MEDLINE">
+        <PMID Version="1">24909095</PMID>
+        <DateCompleted>
+            <Year>2014</Year>
+            <Month>11</Month>
+            <Day>10</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2014</Year>
+            <Month>08</Month>
+            <Day>02</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1879-0887</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>111</Volume>
+                    <Issue>3</Issue>
+                    <PubDate>
+                        <Year>2014</Year>
+                        <Month>Jun</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Radiotherapy and oncology : journal of the European Society for Therapeutic Radiology and Oncology</Title>
+                <ISOAbbreviation>Radiother Oncol</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Risk of second primary lung cancer in women after radiotherapy for breast cancer.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>366-73</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.radonc.2014.05.004</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S0167-8140(14)00184-4</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Several epidemiological studies have reported increased risks of second lung cancers after breast cancer irradiation. In this study we assessed the effects of the delivered radiation dose to the lung and the risk of second primary lung cancer.</AbstractText>
+                <AbstractText Label="METHODS" NlmCategory="METHODS">We conducted a nested case-control study of second lung cancer in a population based cohort of 23,627 early breast cancer patients treated with post-operative radiotherapy from 1982 to 2007. The cohort included 151 cases diagnosed with second primary lung cancer and 443 controls. Individual dose-reconstructions were performed and the delivered dose to the center of the second lung tumor and the comparable location for the controls were estimated, based on the patient specific radiotherapy charts.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">The median age at breast cancer diagnosis was 54 years (range 34-74). The median time from breast cancer treatment to second lung cancer diagnosis was 12 years (range 1-26 years). 91% of the cases were categorized as ever smokers vs. 40% among the controls. For patients diagnosed with a second primary lung cancer five or more years after breast cancer treatment the rate of lung cancer increased linearly with 8.5% per Gray (95% confidence interval=3.1-23.3%; p&lt;0.001). This rate was enhanced for ever smokers with an excess rate of 17.3% per Gray (95% CI=4.5-54%; p&lt;0.005).</AbstractText>
+                <AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">Second lung cancer after radiotherapy for early breast cancer is associated with the delivered dose to the lung. Although the absolute risk is relative low, the growing number of long-time survivors after breast cancer treatment highlights the need for advances in normal tissue sparing radiation techniques.</AbstractText>
+                <CopyrightInformation>Copyright &#169; 2014 Elsevier Ireland Ltd. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Grantzau</LastName>
+                    <ForeName>Trine</ForeName>
+                    <Initials>T</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Experimental Clinical Oncology. Electronic address: grantzau@oncology.dk.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Thomsen</LastName>
+                    <ForeName>Mette Skovhus</ForeName>
+                    <Initials>MS</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Medical Physics, Aarhus University Hospital.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>V&#230;th</LastName>
+                    <ForeName>Michael</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Public Health - Institute of Biostatistics, Aarhus University, Denmark.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Overgaard</LastName>
+                    <ForeName>Jens</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Experimental Clinical Oncology.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2014</Year>
+                <Month>06</Month>
+                <Day>05</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Ireland</Country>
+            <MedlineTA>Radiother Oncol</MedlineTA>
+            <NlmUniqueID>8407192</NlmUniqueID>
+            <ISSNLinking>0167-8140</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000328">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000368">Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D001943">Breast Neoplasms</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000453">epidemiology</QualifierName>
+                <QualifierName MajorTopicYN="Y" UI="Q000532">radiotherapy</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000601">surgery</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D016022">Case-Control Studies</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" Type="Geographic" UI="D003718">Denmark</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000453">epidemiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D005260">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D006801">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008175">Lung Neoplasms</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000453">epidemiology</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000209">etiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008875">Middle Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D009381">Neoplasms, Radiation-Induced</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000453">epidemiology</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000209">etiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D016609">Neoplasms, Second Primary</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000453">epidemiology</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000209">etiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D012306">Risk</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Breast cancer</Keyword>
+            <Keyword MajorTopicYN="N">Radiotherapy</Keyword>
+            <Keyword MajorTopicYN="N">Second lung cancer</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2014</Year>
+                <Month>03</Month>
+                <Day>13</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2014</Year>
+                <Month>05</Month>
+                <Day>05</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2014</Year>
+                <Month>05</Month>
+                <Day>07</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2014</Year>
+                <Month>6</Month>
+                <Day>10</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2014</Year>
+                <Month>6</Month>
+                <Day>10</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2014</Year>
+                <Month>11</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">24909095</ArticleId>
+            <ArticleId IdType="pii">S0167-8140(14)00184-4</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.radonc.2014.05.004</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

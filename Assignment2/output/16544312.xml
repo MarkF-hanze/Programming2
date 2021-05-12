@@ -1,0 +1,125 @@
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Owner="NLM" Status="MEDLINE">
+        <PMID Version="1">16544312</PMID>
+        <DateCompleted>
+            <Year>2006</Year>
+            <Month>04</Month>
+            <Day>25</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2007</Year>
+            <Month>11</Month>
+            <Day>15</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Print">0008-543X</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>106</Volume>
+                    <Issue>7</Issue>
+                    <PubDate>
+                        <Year>2006</Year>
+                        <Month>Apr</Month>
+                        <Day>01</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Cancer</Title>
+                <ISOAbbreviation>Cancer</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Classification schemes for tumors diagnosed in adolescents and young adults.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>1425-30</MedlinePgn>
+            </Pagination>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Barr</LastName>
+                    <ForeName>Ronald D</ForeName>
+                    <Initials>RD</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Pediatrics, McMaster University, Hamilton, Ontario, Canada. rbarr@mcmaster.ca</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Holowaty</LastName>
+                    <ForeName>Eric J</ForeName>
+                    <Initials>EJ</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Birch</LastName>
+                    <ForeName>Jillian M</ForeName>
+                    <Initials>JM</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Cancer</MedlineTA>
+            <NlmUniqueID>0374236</NlmUniqueID>
+            <ISSNLinking>0008-543X</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>AIM</CitationSubset>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000293">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000328">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D017668">Age of Onset</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D006801">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="Y" UI="D009367">Neoplasm Staging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D009369">Neoplasms</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000145">classification</QualifierName>
+                <QualifierName MajorTopicYN="Y" UI="Q000473">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D009626">Terminology as Topic</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2006</Year>
+                <Month>3</Month>
+                <Day>18</Day>
+                <Hour>9</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2006</Year>
+                <Month>4</Month>
+                <Day>28</Day>
+                <Hour>9</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2006</Year>
+                <Month>3</Month>
+                <Day>18</Day>
+                <Hour>9</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">16544312</ArticleId>
+            <ArticleId IdType="doi">10.1002/cncr.21773</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

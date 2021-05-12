@@ -1,0 +1,254 @@
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Owner="NLM" Status="MEDLINE">
+        <PMID Version="1">11830608</PMID>
+        <DateCompleted>
+            <Year>2002</Year>
+            <Month>03</Month>
+            <Day>14</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2019</Year>
+            <Month>05</Month>
+            <Day>13</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Print">0027-8874</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>94</Volume>
+                    <Issue>3</Issue>
+                    <PubDate>
+                        <Year>2002</Year>
+                        <Month>Feb</Month>
+                        <Day>06</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Journal of the National Cancer Institute</Title>
+                <ISOAbbreviation>J Natl Cancer Inst</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Lung cancer following chemotherapy and radiotherapy for Hodgkin's disease.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>182-92</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Lung cancer is a frequent cause of death in patients cured of Hodgkin's disease, but the contributions of chemotherapy, radiotherapy, and smoking are not well described. We quantified the risk of treatment-associated lung cancer, taking into account tobacco use.</AbstractText>
+                <AbstractText Label="METHODS" NlmCategory="METHODS">Within a population-based cohort of 19 046 Hodgkin's disease patients (diagnosed from 1965 through 1994), a case-control study of lung cancer was conducted. The cumulative amount of cytotoxic drugs, the radiation dose to the specific location in the lung where cancer developed, and tobacco use were compared for 222 patients who developed lung cancer and for 444 matched control patients. All statistical tests were two-sided.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">Treatment with alkylating agents without radiotherapy was associated with increased lung cancer risk (relative risk [RR] = 4.2; 95% confidence interval [CI] = 2.1 to 8.8), as was radiation dose of 5 Gy or more without alkylating agents (RR = 5.9; 95% CI = 2.7 to 13.5). Risk increased with both increasing number of cycles of alkylating agents and increasing radiation dose (P for trend &lt;.001). Among patients treated with mechlorethamine, vincristine, procarbazine, and prednisone (MOPP), risk increased with cumulative amounts of mechlorethamine and procarbazine (P&lt;.001) when evaluated separately. Statistically significantly elevated risks of lung cancer were apparent within 1-4 years after treatment with alkylating agents, whereas excess risk after radiotherapy began 5 years after treatment and persisted for more than 20 years. Risk after treatment with alkylating agents and radiotherapy together was as expected if individual excess risks were summed. Tobacco use increased lung cancer risk more than 20-fold; risks from smoking appeared to multiply risks from treatment.</AbstractText>
+                <AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">Past treatments with alkylating agents and radiation therapy for Hodgkin's disease were associated with an increased risk of lung cancer in a dose-dependent and additive fashion. The precise risk estimates, however, should be interpreted cautiously, given the possible residual and enhancing effects of tobacco.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Travis</LastName>
+                    <ForeName>Lois B</ForeName>
+                    <Initials>LB</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Division of Cancer Epidemiology and Genetics, National Cancer Institute, Bethesda, MD 20892, USA. travisl@epndce.nci.nih.gov</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Gospodarowicz</LastName>
+                    <ForeName>Mary</ForeName>
+                    <Initials>M</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Curtis</LastName>
+                    <ForeName>Rochelle E</ForeName>
+                    <Initials>RE</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Clarke</LastName>
+                    <ForeName>E Aileen</ForeName>
+                    <Initials>EA</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Andersson</LastName>
+                    <ForeName>Michael</ForeName>
+                    <Initials>M</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Glimelius</LastName>
+                    <ForeName>Bengt</ForeName>
+                    <Initials>B</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Joensuu</LastName>
+                    <ForeName>Timo</ForeName>
+                    <Initials>T</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lynch</LastName>
+                    <ForeName>Charles F</ForeName>
+                    <Initials>CF</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>van Leeuwen</LastName>
+                    <ForeName>Flora E</ForeName>
+                    <Initials>FE</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Holowaty</LastName>
+                    <ForeName>Eric</ForeName>
+                    <Initials>E</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Storm</LastName>
+                    <ForeName>Hans</ForeName>
+                    <Initials>H</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Glimelius</LastName>
+                    <ForeName>Ingrid</ForeName>
+                    <Initials>I</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Pukkala</LastName>
+                    <ForeName>Eero</ForeName>
+                    <Initials>E</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Stovall</LastName>
+                    <ForeName>Marilyn</ForeName>
+                    <Initials>M</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Fraumeni</LastName>
+                    <ForeName>Joseph F</ForeName>
+                    <Initials>JF</Initials>
+                    <Suffix>Jr</Suffix>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Boice</LastName>
+                    <ForeName>John D</ForeName>
+                    <Initials>JD</Initials>
+                    <Suffix>Jr</Suffix>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Gilbert</LastName>
+                    <ForeName>Ethel</ForeName>
+                    <Initials>E</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013487">Research Support, U.S. Gov't, P.H.S.</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>J Natl Cancer Inst</MedlineTA>
+            <NlmUniqueID>7503089</NlmUniqueID>
+            <ISSNLinking>0027-8874</ISSNLinking>
+        </MedlineJournalInfo>
+        <ChemicalList>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="D000970">Antineoplastic Agents</NameOfSubstance>
+            </Chemical>
+        </ChemicalList>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000293">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000328">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000368">Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000970">Antineoplastic Agents</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000009">adverse effects</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D016022">Case-Control Studies</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D002648">Child</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D018572">Disease-Free Survival</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D004305">Dose-Response Relationship, Drug</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D004307">Dose-Response Relationship, Radiation</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D005260">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D006689">Hodgkin Disease</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000150">complications</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000188">drug therapy</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000532">radiotherapy</QualifierName>
+                <QualifierName MajorTopicYN="Y" UI="Q000628">therapy</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D006801">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008175">Lung Neoplasms</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000150">complications</QualifierName>
+                <QualifierName MajorTopicYN="Y" UI="Q000209">etiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008297">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008875">Middle Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D016609">Neoplasms, Second Primary</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000150">complications</QualifierName>
+                <QualifierName MajorTopicYN="Y" UI="Q000209">etiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D011878">Radiotherapy</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000009">adverse effects</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D012307">Risk Factors</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D012907">Smoking</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000009">adverse effects</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2002</Year>
+                <Month>2</Month>
+                <Day>7</Day>
+                <Hour>10</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2002</Year>
+                <Month>3</Month>
+                <Day>15</Day>
+                <Hour>10</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2002</Year>
+                <Month>2</Month>
+                <Day>7</Day>
+                <Hour>10</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">11830608</ArticleId>
+            <ArticleId IdType="doi">10.1093/jnci/94.3.182</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

@@ -1,4 +1,4 @@
-#!/usr/bin/envs python3
+#!/usr/bin/env python
 from Bio import Entrez
 import xml.etree.cElementTree as ET
 import getopt
@@ -71,6 +71,7 @@ def runserver(fn, data, portnum):
     print("Aaaaaand we're done for the server!")
     manager.shutdown()
     print(results)
+    return results
 
 
 def make_client_manager(ip, port, authkey):
@@ -156,7 +157,7 @@ def get_citations(original_id):
 def download_paper(download_id):
     handle = Entrez.efetch(db='pubmed', id=download_id, retmode="xml")
     tree = ET.parse(handle)
-    tree.write(f'output/{download_id}.xml')
+    return tree
 
 if __name__ == '__main__':
     argumentList = sys.argv[1:]
@@ -184,7 +185,7 @@ if __name__ == '__main__':
     if modes ==0 or modes >= 2:
         print('Error')
         sys.exit()
-
+    print('test')
     print(f'number of childeren = {number_of_children}')
     print(f'Portnumber = {PORTNUM}')
     print(f'Hosts = {hosts}')
@@ -198,6 +199,8 @@ if __name__ == '__main__':
         server.start()
         time.sleep(1)
         server.join()
+        print('TEST VARIABLE)
+        print(server)
     if mode == 'client':
         client = mp.Process(target=runclient, args=(number_of_children, PORTNUM))
         client.start()

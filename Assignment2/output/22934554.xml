@@ -1,0 +1,192 @@
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Owner="NLM" Status="MEDLINE">
+        <PMID Version="1">22934554</PMID>
+        <DateCompleted>
+            <Year>2013</Year>
+            <Month>01</Month>
+            <Day>22</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2012</Year>
+            <Month>09</Month>
+            <Day>14</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1651-226X</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>51</Volume>
+                    <Issue>7</Issue>
+                    <PubDate>
+                        <Year>2012</Year>
+                        <Month>Sep</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Acta oncologica (Stockholm, Sweden)</Title>
+                <ISOAbbreviation>Acta Oncol</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Cancer in adolescents and young adults (15-29 years): a population-based study in the Netherlands 1989-2009.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>922-33</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.3109/0284186X.2012.705891</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Cancer among adolescents and young adults (AYAs; 15-29 years old) is relatively rare but its incidence is increasing worldwide. To define the extent and nature of the AYA patients, this population-based study was performed to explore trends in cancer incidence, survival and risk of second primary cancers in AYAs.</AbstractText>
+                <AbstractText Label="MATERIAL AND METHODS" NlmCategory="METHODS">Data from all AYAs diagnosed with cancer between 1989 and 2009 were obtained from the Netherlands Cancer Registry. Age-standardized incidence rates with estimated annual percentage of change (EAPC) and five-year relative survival rates were calculated. Relative survival was used as a good approximation of cause-specific survival. All analyses were stratified by gender, five-year age group and calendar period. In addition, Standardized Incidence Ratios were determined to evaluate the risk of second primary cancers.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">23 161 AYAs were diagnosed with cancer between 1989 and 2009. Since 1989 the cancer incidence has increased significantly from 28 to 43 per 100 000 person years in males (EAPC: 1.9) and from 30 to 40 per 100 000 person years in females (EAPC: 1.4). The most frequently diagnosed cancers in male AYAs included testicular cancer, melanoma and Hodgkin's disease, whereas in females melanoma, breast cancer and Hodgkin's disease were the most frequently occurring cancers. Five-year relative survival rates were 80% and 82% for males and females, respectively. Over time, the five-year relative survival increased from 74% to 86% and from 79% to 86% in males and females, respectively. The risk of developing a second primary cancer was increased three to six times in males and two to five times in females, depending on rules for counting second primary cancers.</AbstractText>
+                <AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">Although the overall survival has improved over time, the progress made in AYAs for specific cancers is still less compared to improvements made in children and adults. This and the increasing incidence and high risk of second primary cancers warrants further research.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Aben</LastName>
+                    <ForeName>Katja K</ForeName>
+                    <Initials>KK</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Epidemiology, Biostatistics &amp; HTA, Radboud University Nijmegen Medical Centre, Nijmegen, The Netherlands. K.Aben@ebh.umcn.nl</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>van Gaal</LastName>
+                    <ForeName>Carlijn</ForeName>
+                    <Initials>C</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>van Gils</LastName>
+                    <ForeName>Nienke A</ForeName>
+                    <Initials>NA</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>van der Graaf</LastName>
+                    <ForeName>Winette T</ForeName>
+                    <Initials>WT</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zielhuis</LastName>
+                    <ForeName>Gerhard A</ForeName>
+                    <Initials>GA</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2012</Year>
+                <Month>08</Month>
+                <Day>30</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>Acta Oncol</MedlineTA>
+            <NlmUniqueID>8709065</NlmUniqueID>
+            <ISSNLinking>0284-186X</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000293">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000328">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D017677">Age Distribution</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D001943">Breast Neoplasms</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000453">epidemiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D005260">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D006689">Hodgkin Disease</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000453">epidemiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D006801">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D015994">Incidence</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008297">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008545">Melanoma</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000453">epidemiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D009369">Neoplasms</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000453">epidemiology</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000401">mortality</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D016609">Neoplasms, Second Primary</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000453">epidemiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" Type="Geographic" UI="D009426">Netherlands</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000453">epidemiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D011788">Quality of Life</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D012306">Risk</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D017678">Sex Distribution</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D012878">Skin Neoplasms</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000453">epidemiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D015996">Survival Rate</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000639">trends</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D013736">Testicular Neoplasms</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000453">epidemiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D055815">Young Adult</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2012</Year>
+                <Month>9</Month>
+                <Day>1</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2012</Year>
+                <Month>9</Month>
+                <Day>1</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2013</Year>
+                <Month>1</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">22934554</ArticleId>
+            <ArticleId IdType="doi">10.3109/0284186X.2012.705891</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

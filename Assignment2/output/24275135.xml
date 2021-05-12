@@ -1,0 +1,720 @@
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Owner="NLM" Status="MEDLINE">
+        <PMID Version="1">24275135</PMID>
+        <DateCompleted>
+            <Year>2014</Year>
+            <Month>01</Month>
+            <Day>17</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2018</Year>
+            <Month>11</Month>
+            <Day>13</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Electronic">1474-5488</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>14</Volume>
+                    <Issue>13</Issue>
+                    <PubDate>
+                        <Year>2013</Year>
+                        <Month>Dec</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>The Lancet. Oncology</Title>
+                <ISOAbbreviation>Lancet Oncol</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Recommendations for breast cancer surveillance for female survivors of childhood, adolescent, and young adult cancer given chest radiation: a report from the International Late Effects of Childhood Cancer Guideline Harmonization Group.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>e621-9</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/S1470-2045(13)70303-6</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S1470-2045(13)70303-6</ELocationID>
+            <Abstract>
+                <AbstractText>Female survivors of childhood, adolescent, and young adult (CAYA) cancer who were given radiation to fields that include breast tissue (ie, chest radiation) have an increased risk of breast cancer. Clinical practice guidelines are essential to ensure that these individuals receive optimum care and to reduce the detrimental consequences of cancer treatment; however, surveillance recommendations vary among the existing long-term follow-up guidelines. We applied evidence-based methods to develop international, harmonised recommendations for breast cancer surveillance among female survivors of CAYA cancer who were given chest radiation before age 30 years. The recommendations were formulated by an international, multidisciplinary panel and are graded according to the strength of the underlying evidence. </AbstractText>
+                <CopyrightInformation>Copyright &#169; 2013 Elsevier Ltd. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Mulder</LastName>
+                    <ForeName>Ren&#233;e L</ForeName>
+                    <Initials>RL</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Paediatric Oncology, Emma Children's Hospital and Academic Medical Centre, Amsterdam, Netherlands. Electronic address: r.l.mulder@amc.uva.nl.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kremer</LastName>
+                    <ForeName>Leontien C M</ForeName>
+                    <Initials>LC</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hudson</LastName>
+                    <ForeName>Melissa M</ForeName>
+                    <Initials>MM</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Bhatia</LastName>
+                    <ForeName>Smita</ForeName>
+                    <Initials>S</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Landier</LastName>
+                    <ForeName>Wendy</ForeName>
+                    <Initials>W</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Levitt</LastName>
+                    <ForeName>Gill</ForeName>
+                    <Initials>G</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Constine</LastName>
+                    <ForeName>Louis S</ForeName>
+                    <Initials>LS</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wallace</LastName>
+                    <ForeName>W Hamish</ForeName>
+                    <Initials>WH</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>van Leeuwen</LastName>
+                    <ForeName>Flora E</ForeName>
+                    <Initials>FE</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ronckers</LastName>
+                    <ForeName>C&#233;cile M</ForeName>
+                    <Initials>CM</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Henderson</LastName>
+                    <ForeName>Tara O</ForeName>
+                    <Initials>TO</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Dwyer</LastName>
+                    <ForeName>Mary</ForeName>
+                    <Initials>M</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Skinner</LastName>
+                    <ForeName>Roderick</ForeName>
+                    <Initials>R</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Oeffinger</LastName>
+                    <ForeName>Kevin C</ForeName>
+                    <Initials>KC</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <CollectiveName>International Late Effects of Childhood Cancer Guideline Harmonization Group</CollectiveName>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>K05 CA160724</GrantID>
+                    <Acronym>CA</Acronym>
+                    <Agency>NCI NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>K05CA160724</GrantID>
+                    <Acronym>CA</Acronym>
+                    <Agency>NCI NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>P30 CA021765</GrantID>
+                    <Acronym>CA</Acronym>
+                    <Agency>NCI NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>U10 CA098543</GrantID>
+                    <Acronym>CA</Acronym>
+                    <Agency>NCI NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 CA134722</GrantID>
+                    <Acronym>CA</Acronym>
+                    <Agency>NCI NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D017065">Practice Guideline</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>Lancet Oncol</MedlineTA>
+            <NlmUniqueID>100957246</NlmUniqueID>
+            <ISSNLinking>1470-2045</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000293">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000367">Age Factors</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D001943">Breast Neoplasms</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000175">diagnosis</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000209">etiology</QualifierName>
+                <QualifierName MajorTopicYN="Y" UI="Q000517">prevention &amp; control</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D002648">Child</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="Y" UI="D055088">Early Detection of Cancer</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000009">adverse effects</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000379">methods</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000592">standards</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D019317">Evidence-Based Medicine</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D005260">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D006801">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D033183">Interdisciplinary Communication</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D007391">International Cooperation</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008279">Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008327">Mammography</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="Y" UI="D008403">Mass Screening</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000009">adverse effects</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000379">methods</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000592">standards</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D009369">Neoplasms</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000532">radiotherapy</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D011159">Population Surveillance</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000379">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D011878">Radiotherapy</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000009">adverse effects</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D018570">Risk Assessment</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="Y" UI="D017741">Survivors</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D013997">Time Factors</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D055815">Young Adult</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2013</Year>
+                <Month>11</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2013</Year>
+                <Month>11</Month>
+                <Day>28</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2014</Year>
+                <Month>1</Month>
+                <Day>18</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">24275135</ArticleId>
+            <ArticleId IdType="pii">S1470-2045(13)70303-6</ArticleId>
+            <ArticleId IdType="doi">10.1016/S1470-2045(13)70303-6</ArticleId>
+            <ArticleId IdType="pmc">PMC4257601</ArticleId>
+            <ArticleId IdType="mid">NIHMS593194</ArticleId>
+        </ArticleIdList>
+        <ReferenceList>
+            <Reference>
+                <Citation>Blood. 2008 Jan 15;111(2):939-44</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17911386</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Br J Cancer. 2009 Aug 18;101(4):582-8</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">19672261</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Ann Intern Med. 2008 May 6;148(9):671-9</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">18458280</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Am J Hum Genet. 1995 Jan;56(1):265-71</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">7825587</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 2011 Jun 20;29(18):2466-73</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">21576642</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Circulation. 2003 Jun 17;107(23):2979-86</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">12814985</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 2001 Apr 15;19(8):2263-71</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">11304780</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Natl Cancer Inst. 2010 Feb 3;102(3):170-8</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">20071685</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Am J Hum Genet. 1998 Mar;62(3):676-89</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">9497246</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Breast J. 2001 Jan-Feb;7(1):46-52</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">11348415</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA. 2007 Jun 27;297(24):2705-15</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17595271</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Natl Cancer Inst. 2005 Oct 5;97(19):1428-37</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">16204692</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Int J Cancer. 2008 May 1;122(9):2085-93</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">18196579</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Eur J Cancer. 2009 Apr;45(6):992-1005</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">19231160</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Breast Cancer Res Treat. 2007 Apr;102(2):211-8</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17004116</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Ann Intern Med. 2010 Apr 6;152(7):444-55; W144-54</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">20368650</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Natl Cancer Inst Monogr. 2005;(35):67-71</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">16287888</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Eur J Cancer. 2006 Mar;42(4):501-8</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">16406574</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Br J Radiol. 2005 Mar;78(927):207-18</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">15730985</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Natl Cancer Inst. 2000 Jun 21;92(12):971-6</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">10861308</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2012 Nov 17;380(9855):1778-86</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">23117178</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Ann Oncol. 2007 Feb;18(2):288-92</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17088328</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>N Engl J Med. 2011 Sep 15;365(11):1025-32</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">21916640</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 1992 Nov;10(11):1674-81</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">1403050</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>BMJ. 2012;345:e5660</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">22956590</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>N Engl J Med. 1998 Apr 16;338(16):1089-96</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">9545356</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 2009 Aug 20;27(24):3901-7</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">19620485</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Ann Intern Med. 2012 May 1;156(9):609-17</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">22547470</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>N Engl J Med. 2004 Jul 29;351(5):427-37</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">15282350</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Br J Cancer. 2004 Aug 31;91(5):861-7</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">15292936</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Pediatr Blood Cancer. 2013 Apr;60(4):543-9</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">23281199</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Radiother Oncol. 2001 Jun;59(3):247-55</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">11369065</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA. 2005 Mar 9;293(10):1245-56</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">15755947</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA. 2003 Jul 23;290(4):465-75</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">12876089</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA. 2004 Sep 15;292(11):1317-25</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">15367553</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Breast Cancer Res Treat. 2006 Nov;100(1):109-19</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">16791481</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Int J Cancer. 2007 Jan 15;120(2):384-91</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17066449</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Ann Oncol. 2003 Aug;14(8):1185-9</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">12881373</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2005 May 21-27;365(9473):1769-78</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">15910949</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Ann Intern Med. 2009 Nov 17;151(10):727-37, W237-42</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">19920273</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>BMJ. 2004 Jun 19;328(7454):1490</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">15205295</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Ann Oncol. 2008 Jan;19(1):62-7</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17878177</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Am Coll Radiol. 2009 Mar;6(3):171-9</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">19248993</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Am J Hum Genet. 1997 Jul;61(1):120-8</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">9245992</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 2002 Apr 15;20(8):2085-91</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">11956269</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 2009 Sep 10;27(26):4239-46</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">19667275</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Eur J Cancer. 2007 Sep;43(13):1905-17</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17681781</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>N Engl J Med. 2006 Oct 12;355(15):1572-82</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17035650</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Natl Cancer Inst. 2009 Feb 4;101(3):205-9</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">19176458</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 1993 Nov 27;342(8883):1317-22</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">7901634</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2003 Apr 26;361(9367):1411-7</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">12727393</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Br J Cancer. 2006 Oct 9;95(7):801-10</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17016484</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 2000 Feb;18(4):765-72</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">10673517</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Natl Cancer Inst. 2003 Jul 2;95(13):971-80</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">12837833</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 2004 Dec 15;22(24):4979-90</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">15576413</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Cancer Res. 2010 Sep 15;70(18):7187-98</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">20843820</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Eur J Health Econ. 2007 Jun;8(2):137-44</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17347845</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA. 2008 Jan 9;299(2):194-201</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">18182601</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>JAMA. 2006 May 24;295(20):2374-84</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">16720823</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Radiology. 1992 Aug;184(2):421-3</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">1320281</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Invest Radiol. 2011 Feb;46(2):94-105</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">21139507</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Ann Intern Med. 2004 Oct 19;141(8):590-7</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">15492338</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Epidemiol. 2012 Jun;65(6):584-9</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">22297117</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>BMJ. 1999 Feb 20;318(7182):527-30</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">10024268</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Popul Health Metr. 2004 Jul 27;2(1):6</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">15279675</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>AJR Am J Roentgenol. 2005 Feb;184(2):428-32</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">15671358</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Stat Med. 2003 Jun 15;22(11):1837-48</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">12754719</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Eur J Surg Oncol. 2010 Dec;36(12):1165-71</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">20889280</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Breast J. 2008 Jan-Feb;14(1):39-48</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">18186864</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>BMJ. 1998 Aug 15;317(7156):465-8</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">9703533</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 2000 Jun;18(12):2435-43</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">10856104</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Radiat Res. 2002 Aug;158(2):220-35</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">12105993</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 2003 Dec 1;21(23):4386-94</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">14645429</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 2005 Jan 1;23(1):197-204</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">15625374</ArticleId>
+                </ArticleIdList>
+            </Reference>
+        </ReferenceList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

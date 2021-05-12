@@ -1,0 +1,398 @@
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Owner="NLM" Status="MEDLINE">
+        <PMID Version="1">22918549</PMID>
+        <DateCompleted>
+            <Year>2013</Year>
+            <Month>08</Month>
+            <Day>28</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2019</Year>
+            <Month>10</Month>
+            <Day>08</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1573-7225</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>23</Volume>
+                    <Issue>10</Issue>
+                    <PubDate>
+                        <Year>2012</Year>
+                        <Month>Oct</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Cancer causes &amp; control : CCC</Title>
+                <ISOAbbreviation>Cancer Causes Control</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>The risk of a second primary lung cancer after a first invasive breast cancer according to estrogen receptor status.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>1721-8</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1007/s10552-012-0054-3</ELocationID>
+            <Abstract>
+                <AbstractText Label="PURPOSE" NlmCategory="OBJECTIVE">Lung cancers account for 5&#160;% of second primary cancers after breast cancer. The low overall 5-year relative survival rate of lung cancer makes it a particularly concerning new malignancy for breast cancer survivors. It is unknown whether second lung cancer risk varies by estrogen receptor (ER) expression of the first breast cancer.</AbstractText>
+                <AbstractText Label="METHODS" NlmCategory="METHODS">We evaluated second primary lung cancer risks using standardized incidence ratios (SIRs) (95&#160;% confidence intervals (CIs)) among 222,148 one-year breast cancer survivors in the NCI-SEER Program registry database (1992-2008). Relative risks (RRs) and 95&#160;% CIs for lung cancer following ER(-) compared with ER(+) breast cancer were estimated using Poisson regression, adjusted for age, year, and stage of breast cancer diagnosis, attained age, latency, and radiotherapy. We also examined the reciprocal association of second ER(-) and ER(+) breast cancers among 28,107 1-year lung cancer survivors.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">There were 418 and 1,444 second lung cancers diagnosed following 50,781 ER(-) and 171,367 ER(+) breast cancers. Second lung cancer rates were significantly elevated after ER(-) (SIR&#160;=&#160;1.20 (1.09-1.33)), but not ER(+) (SIR&#160;=&#160;0.96 (0.91-1.01)) breast cancer. The adjusted RR for a second lung cancer following ER(-) compared with ER(+) breast cancer was 1.22 (1.10-1.37). The reciprocal adjusted RR for a second ER(-) compared with ER(+) breast cancer following lung cancer was 1.29 (0.98-1.70).</AbstractText>
+                <AbstractText Label="CONCLUSION" NlmCategory="CONCLUSIONS">The parallel increase for a second lung cancer following an ER(-) first breast cancer and for a second ER(-) breast cancer after a first lung cancer suggests that there may be shared etiologic factors for these cancers. Further evaluation of lung cancer risk after ER(-) breast cancer may identify women at high risk for this fatal malignancy.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Schonfeld</LastName>
+                    <ForeName>Sara J</ForeName>
+                    <Initials>SJ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Division of Cancer Epidemiology and Genetics, National Cancer Institute, NIH, Bethesda, MD, USA. schonfelds@fellows.iarc.fr</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Curtis</LastName>
+                    <ForeName>Rochelle E</ForeName>
+                    <Initials>RE</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Anderson</LastName>
+                    <ForeName>William F</ForeName>
+                    <Initials>WF</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Berrington de Gonz&#225;lez</LastName>
+                    <ForeName>Amy</ForeName>
+                    <Initials>A</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>Z01 CP010131-13</GrantID>
+                    <Agency>Intramural NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D052060">Research Support, N.I.H., Intramural</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2012</Year>
+                <Month>08</Month>
+                <Day>24</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Netherlands</Country>
+            <MedlineTA>Cancer Causes Control</MedlineTA>
+            <NlmUniqueID>9100846</NlmUniqueID>
+            <ISSNLinking>0957-5243</ISSNLinking>
+        </MedlineJournalInfo>
+        <ChemicalList>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="D011960">Receptors, Estrogen</NameOfSubstance>
+            </Chemical>
+        </ChemicalList>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000328">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000368">Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D001943">Breast Neoplasms</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000453">epidemiology</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000401">mortality</QualifierName>
+                <QualifierName MajorTopicYN="Y" UI="Q000473">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D016001">Confidence Intervals</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D005260">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D006801">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D015994">Incidence</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008175">Lung Neoplasms</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000453">epidemiology</QualifierName>
+                <QualifierName MajorTopicYN="Y" UI="Q000209">etiology</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000473">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008875">Middle Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D016609">Neoplasms, Second Primary</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000453">epidemiology</QualifierName>
+                <QualifierName MajorTopicYN="Y" UI="Q000209">etiology</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000473">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D011960">Receptors, Estrogen</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000378">metabolism</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D012042">Registries</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D018426">SEER Program</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D015996">Survival Rate</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D017741">Survivors</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2012</Year>
+                <Month>05</Month>
+                <Day>01</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2012</Year>
+                <Month>08</Month>
+                <Day>09</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2012</Year>
+                <Month>8</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2012</Year>
+                <Month>8</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2013</Year>
+                <Month>8</Month>
+                <Day>29</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">22918549</ArticleId>
+            <ArticleId IdType="doi">10.1007/s10552-012-0054-3</ArticleId>
+            <ArticleId IdType="pmc">PMC3474934</ArticleId>
+            <ArticleId IdType="mid">NIHMS406412</ArticleId>
+        </ArticleIdList>
+        <ReferenceList>
+            <Reference>
+                <Citation>Int J Cancer. 2001 Feb 15;91(4):580-4</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">11251985</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 2011 May 20;29(15):2121-7</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">21482992</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Cancer Epidemiol Biomarkers Prev. 2002 Oct;11(10 Pt 1):953-71</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">12376493</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Breast Cancer Res Treat. 2002 Nov;76(1):27-36</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">12408373</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Cancer. 2003 Mar 15;97(6):1404-11</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">12627503</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Am J Epidemiol. 2003 Dec 1;158(11):1108-13</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">14630607</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Cancer Epidemiol Biomarkers Prev. 2004 Mar;13(3):398-404</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">15006915</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Br J Cancer. 2004 Aug 31;91(5):868-72</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">15292931</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Cancer Epidemiol Biomarkers Prev. 2004 Oct;13(10):1558-68</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">15466970</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Epidemiol Community Health. 1984 Mar;38(1):85-8</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">6707569</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Biometrics. 1995 Sep;51(3):874-87</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">7548706</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Natl Cancer Inst. 1998 Sep 16;90(18):1371-88</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">9747868</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2005 May 14-20;365(9472):1687-717</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">15894097</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Cancer Causes Control. 2005 Oct;16(8):975-85</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">16132806</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet Oncol. 2005 Oct;6(10):773-9</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">16198983</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet. 2005 Dec 17;366(9503):2087-106</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">16360786</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Int J Cancer. 2006 May 1;118(9):2285-92</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">16342146</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 2006 Nov 1;24(31):5091-7</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17033037</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Oncologist. 2007 Jan;12(1):20-37</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17227898</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Cancer Epidemiol Biomarkers Prev. 2007 Mar;16(3):566-71</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17372253</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Chest. 2007 Sep;132(3 Suppl):29S-55S</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17873159</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Breast Cancer Res Treat. 2007 Dec;106(3):439-51</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">17277968</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Clin Oncol. 2008 Mar 10;26(8):1239-46</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">18323547</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Br J Cancer. 2010 Jan 5;102(1):220-6</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">19935795</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Cancer J. 2010 Jan-Feb;16(1):23-32</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">20164687</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lung Cancer. 2010 Jul;69(1):40-5</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">19747750</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet Oncol. 2010 Dec;11(12):1184-92</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">20541465</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Lancet Oncol. 2010 Dec;11(12):1135-41</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">21087898</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Tob Control. 2011 Jan;20(1):e2</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">21148114</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Arch Intern Med. 2011 Jan 24;171(2):125-33</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">21263102</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Cancer Res Clin Oncol. 2011 Feb;137(2):183-92</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">21069385</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>Cancer Causes Control. 2011 May;22(5):775-83</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">21360045</ArticleId>
+                </ArticleIdList>
+            </Reference>
+            <Reference>
+                <Citation>J Natl Cancer Inst. 2002 Jun 5;94(11):835-44</Citation>
+                <ArticleIdList>
+                    <ArticleId IdType="pubmed">12048271</ArticleId>
+                </ArticleIdList>
+            </Reference>
+        </ReferenceList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

@@ -1,0 +1,178 @@
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Owner="NLM" Status="MEDLINE">
+        <PMID Version="1">12105993</PMID>
+        <DateCompleted>
+            <Year>2003</Year>
+            <Month>02</Month>
+            <Day>06</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2019</Year>
+            <Month>09</Month>
+            <Day>16</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Print">0033-7587</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>158</Volume>
+                    <Issue>2</Issue>
+                    <PubDate>
+                        <Year>2002</Year>
+                        <Month>Aug</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Radiation research</Title>
+                <ISOAbbreviation>Radiat Res</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Radiation effects on breast cancer risk: a pooled analysis of eight cohorts.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>220-35</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText>Breast cancer incidence rates after radiation exposure in eight large cohorts are described and compared. The nature of the exposures varies appreciably, ranging from a single or a small number of high-dose-rate exposures (Japanese atomic bomb survivors, U.S. acute post-partum mastitis patients, Swedish benign breast disease patients, and U.S. infants with thymic enlargement) to highly fractionated high-dose-rate exposures (two U.S. tuberculosis cohorts) and protracted low-dose-rate exposure (two Swedish skin hemangioma cohorts). There were 1,502 breast cancers among 77,527 women (about 35,000 of whom were exposed) with 1.8 million woman-years of follow-up. The excess risk depends linearly on dose with a downturn at high doses. No simple unified summary model adequately describes the excess risks in all groups. Excess risks for the thymus, tuberculosis, and atomic bomb survivor cohorts have similar temporal patterns, depending on attained age for relative risk models and on both attained age and age at exposure for excess rate models. Excess rates were similar in these cohorts, whereas, related in part to the low breast cancer background rates for Japanese women, the excess relative risk per unit dose in the bomb survivors was four times that in the tuberculosis or thymus cohorts. Excess rates were higher for the mastitis and benign breast disease cohorts. The hemangioma cohorts showed lower excess risks suggesting ameliorating dose-rate effects for protracted low-dose-rate exposures. For comparable ages at exposure (approximately 0.5 years), the excess risk in the hemangioma cohorts was about one-seventh that in the thymus cohort, whose members received acute high-dose-rate exposures. The results support the linearity of the radiation dose response for breast cancer, highlight the importance of age and age at exposure on the risks, and suggest a similarity in risks for acute and fractionated high-dose-rate exposures with much smaller effects from low-dose-rate protracted exposures. There is also a suggestion that women with some benign breast conditions may be at elevated risk of radiation-associated breast cancer.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Preston</LastName>
+                    <ForeName>Dale L</ForeName>
+                    <Initials>DL</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Statistics, Radiation Effects Research Foundation, Hiroshima, Japan. preston@rerf.or.jp</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Mattsson</LastName>
+                    <ForeName>Anders</ForeName>
+                    <Initials>A</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Holmberg</LastName>
+                    <ForeName>Erik</ForeName>
+                    <Initials>E</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Shore</LastName>
+                    <ForeName>Roy</ForeName>
+                    <Initials>R</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hildreth</LastName>
+                    <ForeName>Nancy G</ForeName>
+                    <Initials>NG</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Boice</LastName>
+                    <ForeName>John D</ForeName>
+                    <Initials>JD</Initials>
+                    <Suffix>Jr</Suffix>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016448">Multicenter Study</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+                <PublicationType UI="D013486">Research Support, U.S. Gov't, Non-P.H.S.</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Radiat Res</MedlineTA>
+            <NlmUniqueID>0401245</NlmUniqueID>
+            <ISSNLinking>0033-7587</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CitationSubset>S</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="ErratumIn">
+                <RefSource>Radiat Res. 2002 Nov;158(5):666</RefSource>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000293">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000328">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000368">Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D001943">Breast Neoplasms</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000453">epidemiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D002648">Child</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D015331">Cohort Studies</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D005260">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D006801">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D015994">Incidence</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008875">Middle Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008954">Models, Biological</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D009381">Neoplasms, Radiation-Induced</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000453">epidemiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D009689">Nuclear Warfare</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D012307">Risk Factors</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D017741">Survivors</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D013997">Time Factors</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2002</Year>
+                <Month>7</Month>
+                <Day>11</Day>
+                <Hour>10</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2003</Year>
+                <Month>2</Month>
+                <Day>7</Day>
+                <Hour>4</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2002</Year>
+                <Month>7</Month>
+                <Day>11</Day>
+                <Hour>10</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">12105993</ArticleId>
+            <ArticleId IdType="doi">10.1667/0033-7587(2002)158[0220:reobcr]2.0.co;2</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>
