@@ -169,7 +169,7 @@ if __name__ == '__main__':
     for o, a in opts:
         if o == "-n":
             number_of_children = int(a)
-        elif  o == "-p":
+        elif o == "-p":
             PORTNUM = int(a)
         elif o == "-h":
             hosts = str(a)
@@ -184,13 +184,6 @@ if __name__ == '__main__':
     if modes ==0 or modes >= 2:
         print('Error')
         sys.exit()
-    print('test')
-    print(f'number of childeren = {number_of_children}')
-    print(f'Portnumber = {PORTNUM}')
-    print(f'Hosts = {hosts}')
-    print(f'Number of articals = {number_of_articles}')
-    print(f"Mode = {mode}")
-    print(f"Article to download = {args[0]}")
     if mode == 'server':
         data = get_citations(args[0])
         data = data[:max(number_of_articles, len(data))]
