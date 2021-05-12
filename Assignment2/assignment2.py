@@ -1,3 +1,4 @@
+#!/usr/bin/envs python3
 from Bio import Entrez
 import xml.etree.cElementTree as ET
 import getopt
@@ -33,9 +34,9 @@ def make_server_manager(port, authkey):
     return manager
 
 
-def runserver(fn, data):
+def runserver(fn, data, portnum):
     # Start a shared manager server and access its queues
-    manager = make_server_manager(PORTNUM, b'whathasitgotinitspocketsesss?')
+    manager = make_server_manager(portnum, b'whathasitgotinitspocketsesss?')
     shared_job_q = manager.get_job_q()
     shared_result_q = manager.get_result_q()
 
@@ -91,8 +92,8 @@ def make_client_manager(ip, port, authkey):
     return manager
 
 
-def runclient(num_processes):
-    manager = make_client_manager(IP, PORTNUM, AUTHKEY)
+def runclient(num_processes, portnum):
+    manager = make_client_manager(IP, portnum, AUTHKEY)
     job_q = manager.get_job_q()
     result_q = manager.get_result_q()
     run_workers(job_q, result_q, num_processes)
@@ -169,7 +170,7 @@ if __name__ == '__main__':
         if o == "-n":
             number_of_children = int(a)
         elif  o == "-p":
-            PORTNUM =int(a)
+            PORTNUM = int(a)
         elif o == "-h":
             hosts = str(a)
         elif o == "-a":
@@ -193,12 +194,12 @@ if __name__ == '__main__':
     if mode == 'server':
         data = get_citations(args[0])
         data = data[:max(number_of_articles, len(data))]
-        server = mp.Process(target=runserver, args=(download_paper, data))
+        server = mp.Process(target=runserver, args=(download_paper, data, PORTNUM))
         server.start()
         time.sleep(1)
         server.join()
     if mode == 'client':
-        client = mp.Process(target=runclient, args=(number_of_children,))
+        client = mp.Process(target=runclient, args=(number_of_children, PORTNUM))
         client.start()
         time.sleep(1)
         client.join()
