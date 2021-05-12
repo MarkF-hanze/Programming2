@@ -55,7 +55,8 @@ def runserver(fn, data, portnum):
         try:
             result = shared_result_q.get_nowait()
             results.append(result)
-            print("Got result!", result)
+            result['result'].write(f'output/{result["job"]["arg"]}.xml')
+            print(f"Got result! {result['job']['arg']}")
             if len(results) == len(data):
                 print("Got all results!")
                 break
@@ -70,8 +71,6 @@ def runserver(fn, data, portnum):
     time.sleep(5)
     print("Aaaaaand we're done for the server!")
     manager.shutdown()
-    print(results)
-    return results
 
 
 def make_client_manager(ip, port, authkey):
@@ -199,8 +198,6 @@ if __name__ == '__main__':
         server.start()
         time.sleep(1)
         server.join()
-        print('TEST VARIABLE)
-        print(server)
     if mode == 'client':
         client = mp.Process(target=runclient, args=(number_of_children, PORTNUM))
         client.start()
