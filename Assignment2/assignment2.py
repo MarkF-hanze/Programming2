@@ -159,7 +159,8 @@ def download_paper(download_id):
 
 if __name__ == '__main__':
     argumentList = sys.argv[1:]
-    # python3 assignment2.py -n 2 -s -p 5381 -h "localhost" -a 20 "30797674"
+    # python3 assignment2.py -n 1 -s -p 5381 -h "localhost" -a 20 "30797674"
+    # python3 assignment2.py -n 1 -c -p 5381 -h "localhost" -a 20 "30797674"
     # Options
     options = "n:csp:h:a:"
     opts, args = getopt.getopt(argumentList, options)
