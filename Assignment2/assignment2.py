@@ -186,7 +186,7 @@ if __name__ == '__main__':
         sys.exit()
     if mode == 'server':
         data = get_citations(args[0])
-        data = data[:max(number_of_articles, len(data))]
+        data = data[:min(number_of_articles, len(data))]
         server = mp.Process(target=runserver, args=(download_paper, data, PORTNUM))
         server.start()
         time.sleep(1)
