@@ -9,10 +9,9 @@ import sys, time, queue
 
 POISONPILL = "MEMENTOMORI"
 ERROR = "DOH"
-IP = ''
 AUTHKEY = b'whathasitgotinitspocketsesss?'
 
-def make_server_manager(port, authkey):
+def make_server_manager(port, authkey, ip):
     """ Create a manager for the server, listening on the given port.
         Return a manager object with get_job_q and get_result_q methods.
     """
@@ -27,16 +26,15 @@ def make_server_manager(port, authkey):
 
     QueueManager.register('get_job_q', callable=lambda: job_q)
     QueueManager.register('get_result_q', callable=lambda: result_q)
-
-    manager = QueueManager(address=('', port), authkey=authkey)
+    manager = QueueManager(address=(ip, port), authkey=authkey)
     manager.start()
     print('Server started at port %s' % port)
     return manager
 
 
-def runserver(fn, data, portnum):
+def runserver(fn, data, portnum, ip):
     # Start a shared manager server and access its queues
-    manager = make_server_manager(portnum, b'whathasitgotinitspocketsesss?')
+    manager = make_server_manager(portnum, b'whathasitgotinitspocketsesss?', ip)
     shared_job_q = manager.get_job_q()
     shared_result_q = manager.get_result_q()
 
@@ -92,8 +90,8 @@ def make_client_manager(ip, port, authkey):
     return manager
 
 
-def runclient(num_processes, portnum):
-    manager = make_client_manager(IP, portnum, AUTHKEY)
+def runclient(num_processes, portnum, ip):
+    manager = make_client_manager(ip, portnum, AUTHKEY)
     job_q = manager.get_job_q()
     result_q = manager.get_result_q()
     run_workers(job_q, result_q, num_processes)
@@ -160,8 +158,8 @@ def download_paper(download_id):
 
 if __name__ == '__main__':
     argumentList = sys.argv[1:]
-    # python3 assignment2.py -n 1 -s -p 5381 -h "localhost" -a 20 "30797674"
-    # python3 assignment2.py -n 1 -c -p 5381 -h "localhost" -a 20 "30797674"
+    # python3 assignment2.py -s -p 5381 -h "localhost" -a 20 "30797674"
+    # python3 assignment2.py -n 1 -c -p 5381 -h "localhost"
     # Options
     options = "n:csp:h:a:"
     opts, args = getopt.getopt(argumentList, options)
@@ -173,6 +171,8 @@ if __name__ == '__main__':
             PORTNUM = int(a)
         elif o == "-h":
             hosts = str(a)
+            # if hosts == 'localhost':
+            #     hosts = ''
         elif o == "-a":
             number_of_articles = int(a)
         elif o == '-s':
@@ -187,12 +187,12 @@ if __name__ == '__main__':
     if mode == 'server':
         data = get_citations(args[0])
         data = data[:min(number_of_articles, len(data))]
-        server = mp.Process(target=runserver, args=(download_paper, data, PORTNUM))
+        server = mp.Process(target=runserver, args=(download_paper, data, PORTNUM, hosts))
         server.start()
         time.sleep(1)
         server.join()
     if mode == 'client':
-        client = mp.Process(target=runclient, args=(number_of_children, PORTNUM))
+        client = mp.Process(target=runclient, args=(number_of_children, PORTNUM, hosts))
         client.start()
         time.sleep(1)
         client.join()
