@@ -161,7 +161,7 @@ if __name__ == '__main__':
     # python3 assignment2.py -s -p 5381 -h "localhost" -a 20 "30797674"
     # python3 assignment2.py -n 1 -c -p 5381 -h "localhost"
     # Options
-    options = "n:csp:h:a:"
+    options = "n:wmp:h:a:"
     opts, args = getopt.getopt(argumentList, options)
     modes = 0
     for o, a in opts:
@@ -175,10 +175,10 @@ if __name__ == '__main__':
             #     hosts = ''
         elif o == "-a":
             number_of_articles = int(a)
-        elif o == '-s':
+        elif o == '-m':
             mode = 'server'
             modes += 1
-        elif o == '-c':
+        elif o == '-w':
             mode = 'client'
             modes += 1
     if modes ==0 or modes >= 2:
