@@ -3,7 +3,9 @@ from multiprocessing.managers import BaseManager, SyncManager
 import sys, time, queue
 import numpy as np
 
-
+#TODO results saven hoe????
+#TODO heartbeat queue toevoegen
+#TODO core reserveren voor deze hearbeat
 
 class QueueManager(BaseManager):
     pass
@@ -91,6 +93,7 @@ class Server(object):
         print("Aaaaaand we're done for the server!")
         self.manager.shutdown()
 
+#TODO
 # Hoe start je dit op een andere computer
 class Worker(object):
     def __init__(self, ip, port, num_processes):
@@ -106,6 +109,7 @@ class Worker(object):
         job_q = self.manager.get_job_q()
         result_q = self.manager.get_result_q()
         processes = []
+        # TODO hier -1 van maken en 1 core vrijhouden
         for p in range(num_processes):
             temP = mp.Process(target=self.peon, args=(job_q, result_q))
             processes.append(temP)
@@ -137,6 +141,6 @@ class Worker(object):
                 print("sleepytime for", my_name)
                 time.sleep(1)
 
-test = Server('localhost', 3412)
-#test = Worker('localhost', 3412, 10)
+#test = Server('localhost', 3412)
+test = Worker('localhost', 3412, 10)
 
