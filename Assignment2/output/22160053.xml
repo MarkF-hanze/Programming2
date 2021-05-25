@@ -1,0 +1,110 @@
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Owner="NLM" Status="MEDLINE">
+        <PMID Version="1">22160053</PMID>
+        <DateCompleted>
+            <Year>2012</Year>
+            <Month>04</Month>
+            <Day>04</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2016</Year>
+            <Month>10</Month>
+            <Day>21</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Electronic">1520-4383</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>2011</Volume>
+                    <PubDate>
+                        <Year>2011</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Hematology. American Society of Hematology. Education Program</Title>
+                <ISOAbbreviation>Hematology Am Soc Hematol Educ Program</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Late effects in the era of modern therapy for Hodgkin lymphoma.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>323-9</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1182/asheducation-2011.1.323</ELocationID>
+            <Abstract>
+                <AbstractText>Extended-field and subtotal nodal radiation therapy (RT), developed in the 1960s, was the first reliably curative treatment for early-stage Hodgkin lymphoma (HL). However, the large volume of normal tissue irradiated resulted in significant delayed toxicity, including cardiac disease and second cancers (SCs). The 30-year cumulative incidence of heart disease among adult survivors receiving 40-45 Gy of extended-field or mantle RT is approximately 30%; the incidence of SCs is similar. Improving disease control while reducing the toxicity of treatment has been a major objective of HL trials for more than 2 decades. Contemporary involved-field RT (IFRT) reduces irradiated volumes and produces significant reductions in normal tissue dose compared with historic treatments. Recent data indicate that, compared with mantle RT, IFRT reduces the relative risk of breast cancer among young females receiving mediastinal RT by approximately 60% and also reduces cardiac dose. The recent transition to involved-node RT allows further reductions in normal tissue dose. Response-adapted therapy is being evaluated in clinical trials as a means of identifying those patients most likely to benefit from treatment reduction or intensification, enhanced screening will facilitate early intervention to reduce the clinical burden of late effects, and there is increasing interest in elucidating the genetic correlates of treatment toxicity.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Hodgson</LastName>
+                    <ForeName>David C</ForeName>
+                    <Initials>DC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiation Oncology, University of Toronto, Toronto, ON. david.hodgson@rmp.uhn.on.ca</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Hematology Am Soc Hematol Educ Program</MedlineTA>
+            <NlmUniqueID>100890099</NlmUniqueID>
+            <ISSNLinking>1520-4383</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D006689">Hodgkin Disease</DescriptorName>
+                <QualifierName MajorTopicYN="N" UI="Q000150">complications</QualifierName>
+                <QualifierName MajorTopicYN="N" UI="Q000188">drug therapy</QualifierName>
+                <QualifierName MajorTopicYN="Y" UI="Q000532">radiotherapy</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D006801">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D011878">Radiotherapy</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000009">adverse effects</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D012307">Risk Factors</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2011</Year>
+                <Month>12</Month>
+                <Day>14</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2011</Year>
+                <Month>12</Month>
+                <Day>14</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2012</Year>
+                <Month>4</Month>
+                <Day>5</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">22160053</ArticleId>
+            <ArticleId IdType="pii">2011/1/323</ArticleId>
+            <ArticleId IdType="doi">10.1182/asheducation-2011.1.323</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

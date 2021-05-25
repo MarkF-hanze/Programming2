@@ -1,0 +1,230 @@
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Owner="NLM" Status="MEDLINE">
+        <PMID Version="1">16342146</PMID>
+        <DateCompleted>
+            <Year>2006</Year>
+            <Month>04</Month>
+            <Day>28</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2016</Year>
+            <Month>03</Month>
+            <Day>03</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Print">0020-7136</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>118</Volume>
+                    <Issue>9</Issue>
+                    <PubDate>
+                        <Year>2006</Year>
+                        <Month>May</Month>
+                        <Day>01</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>International journal of cancer</Title>
+                <ISOAbbreviation>Int J Cancer</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Risk of second cancer among women with breast cancer.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>2285-92</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText>A large number of women survive a diagnosis of breast cancer. Knowledge of their risk of developing a new primary cancer is important not only in relation to potential side effects of their cancer treatment, but also in relation to the possibility of shared etiology with other types of cancer. A cohort of 525,527 women with primary breast cancer was identified from 13 population-based cancer registries in Europe, Canada, Australia and Singapore, and followed for second primary cancers within the period 1943-2000. We used cancer incidence rates of first primary cancer for the calculation of standardized incidence ratios (SIRs) of second primary cancer. Risk of second primary breast cancer after various types of nonbreast cancer was also computed. For all second cancer sites combined, except contralateral breast cancer, we found a SIR of 1.25 (95% CI = 1.24-1.26) on the basis of 31,399 observed cases after first primary breast cancer. The overall risk increased with increasing time since breast cancer diagnosis and decreased by increasing age at breast cancer diagnosis. There were significant excesses of many different cancer sites; among these the excess was larger than 150 cases for stomach (SIR = 1.35), colorectal (SIR = 1.22), lung (SIR = 1.24), soft tissue sarcoma (SIR = 2.25), melanoma (SIR = 1.29), non-melanoma skin (SIR = 1.58), endometrium (SIR = 1.52), ovary (SIR = 1.48), kidney (SIR = 1.27), thyroid gland (SIR = 1.62) and leukaemia (SIR = 1.52). The excess of cancer after a breast cancer diagnosis is likely to be explained by treatment for breast cancer and by shared genetic or environmental risk factors, although the general excess of cancer suggests that there may be additional explanations such as increased surveillance and general cancer susceptibility.</AbstractText>
+                <CopyrightInformation>2005 Wiley-Liss, Inc.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Mellemkjaer</LastName>
+                    <ForeName>Lene</ForeName>
+                    <Initials>L</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute of Cancer Epidemiology, Danish Cancer Society, Copenhagen, Denmark. lene@cancer.dk</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Friis</LastName>
+                    <ForeName>S&#248;ren</ForeName>
+                    <Initials>S</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Olsen</LastName>
+                    <ForeName>J&#248;rgen H</ForeName>
+                    <Initials>JH</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sc&#233;lo</LastName>
+                    <ForeName>Ghislaine</ForeName>
+                    <Initials>G</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hemminki</LastName>
+                    <ForeName>Kari</ForeName>
+                    <Initials>K</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Tracey</LastName>
+                    <ForeName>Elizabeth</ForeName>
+                    <Initials>E</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Andersen</LastName>
+                    <ForeName>Aage</ForeName>
+                    <Initials>A</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Brewster</LastName>
+                    <ForeName>David H</ForeName>
+                    <Initials>DH</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Pukkala</LastName>
+                    <ForeName>Eero</ForeName>
+                    <Initials>E</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>McBride</LastName>
+                    <ForeName>Mary L</ForeName>
+                    <Initials>ML</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kliewer</LastName>
+                    <ForeName>Erich V</ForeName>
+                    <Initials>EV</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Tonita</LastName>
+                    <ForeName>Jon M</ForeName>
+                    <Initials>JM</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kee-Seng</LastName>
+                    <ForeName>Chia</ForeName>
+                    <Initials>C</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Pompe-Kirn</LastName>
+                    <ForeName>Vera</ForeName>
+                    <Initials>V</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Martos</LastName>
+                    <ForeName>Carmen</ForeName>
+                    <Initials>C</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Jonasson</LastName>
+                    <ForeName>Jon G</ForeName>
+                    <Initials>JG</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Boffetta</LastName>
+                    <ForeName>Paolo</ForeName>
+                    <Initials>P</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Brennan</LastName>
+                    <ForeName>Paul</ForeName>
+                    <Initials>P</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>R03 CA101442-02</GrantID>
+                    <Acronym>CA</Acronym>
+                    <Agency>NCI NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016448">Multicenter Study</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Int J Cancer</MedlineTA>
+            <NlmUniqueID>0042124</NlmUniqueID>
+            <ISSNLinking>0020-7136</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000328">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D000368">Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D001943">Breast Neoplasms</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000473">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D015331">Cohort Studies</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D005260">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D020022">Genetic Predisposition to Disease</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D006801">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D015994">Incidence</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D008875">Middle Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D009378">Neoplasms, Multiple Primary</DescriptorName>
+                <QualifierName MajorTopicYN="Y" UI="Q000453">epidemiology</QualifierName>
+                <QualifierName MajorTopicYN="Y" UI="Q000209">etiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D016017">Odds Ratio</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName MajorTopicYN="N" UI="D012307">Risk Factors</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2005</Year>
+                <Month>12</Month>
+                <Day>13</Day>
+                <Hour>9</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2006</Year>
+                <Month>4</Month>
+                <Day>29</Day>
+                <Hour>9</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2005</Year>
+                <Month>12</Month>
+                <Day>13</Day>
+                <Hour>9</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">16342146</ArticleId>
+            <ArticleId IdType="doi">10.1002/ijc.21651</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>
