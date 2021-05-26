@@ -2,8 +2,11 @@ import multiprocessing as mp
 from multiprocessing.managers import BaseManager, SyncManager
 import sys, time, queue
 import numpy as np
+import paramiko
 
-
+ssh = paramiko.SSHClient()
+ssh.connect('nuc402', 4235, 'MarkF-hanze', 'kS7pTM-7')
+ssh.exec_command()
 
 class QueueManager(BaseManager):
     pass
@@ -114,7 +117,6 @@ class Worker(object):
         for temP in processes:
             temP.join()
 
-
     def peon(self, job_q, result_q):
         my_name = mp.current_process().name
         while True:
@@ -137,6 +139,9 @@ class Worker(object):
                 print("sleepytime for", my_name)
                 time.sleep(1)
 
-test = Server('localhost', 3412)
-#test = Worker('localhost', 3412, 10)
+
+if sys.argv[1] == 's':
+    test = Server('localhost', 3412)
+elif sys.argv[1] == 'c':
+    test = Worker('localhost', 3412, 10)
 
