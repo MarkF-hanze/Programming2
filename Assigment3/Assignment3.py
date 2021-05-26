@@ -3,7 +3,7 @@ from multiprocessing.managers import BaseManager, SyncManager
 import sys, time, queue
 import numpy as np
 import paramiko
-
+import getopt
 
 class QueueManager(BaseManager):
     pass
@@ -58,17 +58,6 @@ class Server(object):
         self.manager = QueueManager(address=(ip, port), authkey=key.get_key())
         self.manager.start()
         print('Server started at port %s' % port)
-        ssh = paramiko.SSHClient()
-        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect('nuc402') 
-        # TODO hoe moet dit
-        channel = ssh.invoke_shell()
-        stdin = channel.makefile('wb')
-        stdin.write('''
-        source p1venv/bin/activate
-        cd /homes/mlfrederiks/PycharmProjects/Programming2/Assigment3
-        python3 Assignment3.py c
-        ''')
         self.poison_pill = PoisonPill()
         self.runserver()
 
@@ -87,13 +76,12 @@ class Server(object):
         while True:
             try:
                 results.update_results(shared_result_q)
-                print('got results')
+                print(f'got results {results.get_results()[-1]}')
                 if len(results.get_results()) == len(data):
                     print(results.get_results())
                     print("Got all results!")
                     break
             except queue.Empty:
-                print('no result')
                 time.sleep(1)
                 continue
         # Tell the client process no more data will be forthcoming
@@ -103,6 +91,29 @@ class Server(object):
         time.sleep(5)
         print("Aaaaaand we're done for the server!")
         self.manager.shutdown()
+
+
+class WorkerFactory(object):
+    def __init__(self, server_ip, server_port):
+        self.server_ip = server_ip
+        self.server_port = server_port
+
+    def setup_ssh(self, ips):
+        for ip in ips:
+            ssh = paramiko.SSHClient()
+            ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+            ssh.connect(ip)
+            channel = ssh.invoke_shell()
+            stdin = channel.makefile('wb')
+            stdin.write(f'''
+            source p1venv/bin/activate
+            cd /homes/mlfrederiks/PycharmProjects/Programming2/Assigment3
+            python3 Assignment3.py -w -hosts {[self.server_ip]} -p {self.server_port}
+            ''')
+
+
+    def setup_worker(self, num_processes):
+        worker = Worker(self.ip, self.port, num_processes)
 
 # Hoe start je dit op een andere computer
 class Worker(object):
@@ -149,9 +160,28 @@ class Worker(object):
                 print("sleepytime for", my_name)
                 time.sleep(1)
 
+if __name__ == '__main__':
+    options = "mhosts:p:"
+    argumentList = sys.argv[1:]
+    opts, args = getopt.getopt(argumentList, options)
+    for o, a in opts:
+        if o == '-m':
+            mode = 'server'
+        elif o == '-w':
+            mode = 'worker'
+        elif o == '-hosts':
+            worker_ips = a
+            server_ip = worker_ips[0]
+            worker_ips.remove(server_ip)
+        elif o == '-p':
+            port = int(a)
 
-if sys.argv[1] == 's':
-    test = Server('assemblix', 6969)
-elif sys.argv[1] == 'c':
-    test = Worker('assemblix', 6969, 10)
+    worker_factory = WorkerFactory(server_ip, port)
+    if mode == 'server':
+        worker_factory.setup_ssh(worker_ips)
+        server = Server(server_ip, port)
+    elif mode == 'worker':
+        # TODO dit niet hardcoden
+        worker_factory.setup_worker(4)
+
 
