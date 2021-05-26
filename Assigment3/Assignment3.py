@@ -4,9 +4,6 @@ import sys, time, queue
 import numpy as np
 import paramiko
 
-ssh = paramiko.SSHClient()
-ssh.connect('nuc402', 4235, 'MarkF-hanze', 'kS7pTM-7')
-ssh.exec_command()
 
 class QueueManager(BaseManager):
     pass
@@ -51,7 +48,7 @@ class Authkey(object):
         return self.authkey
         
 def fn(x):
-  time.sleep(1)
+  time.sleep(5)
   return x**2
   
 class Server(object):
@@ -61,6 +58,17 @@ class Server(object):
         self.manager = QueueManager(address=(ip, port), authkey=key.get_key())
         self.manager.start()
         print('Server started at port %s' % port)
+        ssh = paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh.connect('nuc402') 
+        # TODO hoe moet dit
+        channel = ssh.invoke_shell()
+        stdin = channel.makefile('wb')
+        stdin.write('''
+        source p1venv/bin/activate
+        cd /homes/mlfrederiks/PycharmProjects/Programming2/Assigment3
+        python3 Assignment3.py c
+        ''')
         self.poison_pill = PoisonPill()
         self.runserver()
 
@@ -79,11 +87,13 @@ class Server(object):
         while True:
             try:
                 results.update_results(shared_result_q)
+                print('got results')
                 if len(results.get_results()) == len(data):
                     print(results.get_results())
                     print("Got all results!")
                     break
             except queue.Empty:
+                print('no result')
                 time.sleep(1)
                 continue
         # Tell the client process no more data will be forthcoming
@@ -141,7 +151,7 @@ class Worker(object):
 
 
 if sys.argv[1] == 's':
-    test = Server('localhost', 3412)
+    test = Server('assemblix', 6969)
 elif sys.argv[1] == 'c':
-    test = Worker('localhost', 3412, 10)
+    test = Worker('assemblix', 6969, 10)
 
