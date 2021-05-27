@@ -9,31 +9,37 @@ import time
 import socket
 import os
 
+
 class QueueManager(BaseManager):
     pass
 
+
 class ServerQueueManager(BaseManager):
     pass
+
 
 class MessageManager(object):
     # TODO vragen hoe dit beter kan
     def __init__(self, mode):
         if mode == 's':
-          get_job_q = queue.Queue()
-          get_result_q = queue.Queue()
-          QueueManager.register('get_job_q', callable=lambda: get_job_q)
-          QueueManager.register('get_result_q', callable=lambda: get_result_q)
+            get_job_q = queue.Queue()
+            get_result_q = queue.Queue()
+            get_active_task_q = queue.Queue()
+            QueueManager.register('get_job_q', callable=lambda: get_job_q)
+            QueueManager.register('get_result_q', callable=lambda: get_result_q)
+            QueueManager.register('get_active_task_q', callable=lambda: get_active_task_q)
         elif mode == 'c':
-          ServerQueueManager.register('get_job_q')
-          ServerQueueManager.register('get_result_q')
+            ServerQueueManager.register('get_job_q')
+            ServerQueueManager.register('get_result_q')
+            ServerQueueManager.register('get_active_task_q')
 
 
 class Results(object):
     def __init__(self):
         self.results = []
 
-    def update_results(self, queue):
-        self.results.append(queue.get_nowait())
+    def update_results(self, result):
+        self.results.append(result)
 
     def get_results(self):
         return self.results
@@ -42,22 +48,27 @@ class Results(object):
 class PoisonPill(object):
     def __init__(self):
         self.poisonpill = "MEMENTOMORI"
+
     def get_pill(self):
         return self.poisonpill
-        
+
+
 class Authkey(object):
     def __init__(self):
         self.authkey = b"lasejrtli3qjrlk3241"
+
     def get_key(self):
         return self.authkey
-        
-def fn(x):
-  time.sleep(0.1)
-  return x**2
 
-  
+
+def fn(x):
+    time.sleep(1)
+    return x ** 2
+
+
 class Server(object):
-    def __init__(self, ip, port):
+    def __init__(self, ip, port, worker_ips):
+        self.working_jobs = KeepWorkingJobs(worker_ips)
         self.message_manager = MessageManager('s')
         key = Authkey()
         self.manager = QueueManager(address=(ip, port), authkey=key.get_key())
@@ -71,28 +82,47 @@ class Server(object):
         # TODO dit kan niet 2x
         shared_job_q = self.manager.get_job_q()
         shared_result_q = self.manager.get_result_q()
-        #TODO tijdelijk
-
+        shared_active_task_q = self.manager.get_active_task_q()
+        # TODO tijdelijk
+        # TODO task facotry maken met dit erin
+        ID_to_func = {}
+        unique_num = 0
         data = np.arange(0, 1000)
         for d in data:
-            shared_job_q.put({'fn': fn, 'arg': d})
+            unique_num += 1
+            ID_to_func[unique_num] = (fn, d)
+            shared_job_q.put({'fn': fn, 'arg': d, 'ID': unique_num})
         results = Results()
         time.sleep(2)
         timer = TimeOutTimer(300)
         while True:
-            try:
-                results.update_results(shared_result_q)
-                print(f'got results {results.get_results()[-1]}')
+            # A job got taken!
+            #try:
+            while not shared_active_task_q.empty():
+                taken_job = shared_active_task_q.get_nowait()
+                self.working_jobs.add_job(taken_job['worker'], taken_job['job']['ID'])
+            #except queue.Empty:
+                #pass            
+            # A job got returned!
+            #try:
+            
+            while not shared_result_q.empty():
+                curent_results = shared_result_q.get_nowait()
+                results.update_results(curent_results)
+                self.working_jobs.remove_job(curent_results['worker'], curent_results['job']['ID'])
                 timer.reset_time()
-                if len(results.get_results()) == len(data):
-                    print("Got all results!")
-                    break
-            except queue.Empty:
-                if timer.over_time_out():
-                    print('To long no result exiting')
-                    break
-                time.sleep(1)
-                continue
+            test_dic = {}
+            for nuc in self.working_jobs.get_active_jobs():
+                test_dic[nuc] = [ID_to_func[x] for x in self.working_jobs.get_active_jobs()[nuc]]
+            print(test_dic)
+            if len(results.get_results()) == len(data):
+                  print("Got all results!")
+                  break
+            #except (queue.Empty, ValueError):
+            if timer.over_time_out():
+                print('To long no result exiting')
+                break
+            time.sleep(1)
         # Tell the client process no more data will be forthcoming
         shared_job_q.put(self.poison_pill.get_pill())
         # Sleep a bit before shutting down the server - to give clients time to
@@ -116,11 +146,13 @@ class WorkerFactory(object):
             ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
             ssh.connect(ip)
             print(f'setup_worker to connect to {self.server_ip} on {self.server_port}')
-            ssh.exec_command(f'/homes/mlfrederiks/p1venv/bin/python /homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/Assignment3.py  -w {ip} -h {[self.server_ip]} -p {self.server_port} -n {cores}')
+            ssh.exec_command(
+                f'/homes/mlfrederiks/p1venv/bin/python /homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/Assignment3.py  -w {ip} -h {[self.server_ip]} -p {self.server_port} -n {cores}')
             print('Done')
 
     def setup_worker(self, num_processes, worker_ip):
         worker = Worker(self.server_ip, self.server_port, num_processes, worker_ip)
+
 
 # Hoe start je dit op een andere computer
 class Worker(object):
@@ -130,33 +162,36 @@ class Worker(object):
         key = Authkey()
         self.manager = ServerQueueManager(address=(ip, port), authkey=key.get_key())
         while True:
-          try:
-            self.manager.connect()
-            break
-          except ConnectionRefusedError:
-            pass
+            try:
+                self.manager.connect()
+                break
+            except ConnectionRefusedError:
+                pass
         print('Client connected to %s:%s' % (ip, port))
         self.poison_pill = PoisonPill()
         self.run_workers(num_processes)
 
     def run_workers(self, num_processes):
-        job_q = self.manager.get_job_q()
-        result_q = self.manager.get_result_q()
+
         processes = []
         for p in range(num_processes):
-            temP = mp.Process(target=self.peon, args=(job_q, result_q))
+            temP = mp.Process(target=self.peon)
             processes.append(temP)
             temP.start()
         print("Started %s workers!" % len(processes))
         for temP in processes:
             temP.join()
 
-    def peon(self, job_q, result_q):
+    def peon(self):
+        job_q = self.manager.get_job_q()
+        result_q = self.manager.get_result_q()
+        active_task_q = self.manager.get_active_task_q()
         my_name = mp.current_process().name
         timer = TimeOutTimer(60)
         while True:
             try:
                 job = job_q.get_nowait()
+                active_task_q.put({'job': job, 'worker': self.worker_ip})
                 if job == self.poison_pill.get_pill():
                     job_q.put(self.poison_pill.get_pill())
                     print("Aaaaaaargh", my_name)
@@ -175,6 +210,21 @@ class Worker(object):
                     return
                 print("sleepytime for", my_name)
                 time.sleep(1)
+                
+class KeepWorkingJobs(object):
+    def __init__(self, workers):
+        self.active_workers_jobs = {}
+        for worker in workers:
+            self.active_workers_jobs[worker] = []
+
+    def add_job(self, worker, job):
+        self.active_workers_jobs[worker].append(int(job))
+        
+    def remove_job(self, worker, job):
+         self.active_workers_jobs[worker].remove(int(job))
+         
+    def get_active_jobs(self):
+        return self.active_workers_jobs
 
 
 class TimeOutTimer(object):
@@ -217,17 +267,12 @@ class WatchDirectoy(object):
         return self.new_files
 
 
-
-
-
-
-
-
 def string_to_list(a_string_list):
     a_string_list = a_string_list.replace('[', '["')
     a_string_list = a_string_list.replace(']', '"]')
     a_string_list = a_string_list.replace(',', '","')
     return ast.literal_eval(a_string_list)
+
 
 if __name__ == '__main__':
     watcher = WatchDirectoy('/homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/WatchDirectory')
@@ -262,7 +307,7 @@ if __name__ == '__main__':
     worker_factory = WorkerFactory(server_ip, server_port)
     if mode == 'server':
         worker_factory.setup_ssh(worker_ips)
-        server = Server(server_ip, server_port)
+        server = Server(server_ip, server_port, worker_ips)
     elif mode == 'worker':
         worker_factory.setup_worker(cores, ip_worker)
     else:
