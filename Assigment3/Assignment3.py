@@ -7,6 +7,7 @@ import getopt
 import ast
 import time
 import socket
+import os
 
 class QueueManager(BaseManager):
     pass
@@ -190,7 +191,34 @@ class TimeOutTimer(object):
 
 class WatchDirectoy(object):
     def __init__(self, directory):
+        self.current = -1
         self.directory = directory
+        self.all_files = []
+        self.add_files()
+        self.new_files = self.all_files[:]
+
+    def add_files(self):
+        for filename in os.listdir(self.directory):
+            if filename.endswith(".py"):
+                self.all_files.append(filename)
+
+    def check_new_file(self):
+        for filename in os.listdir(self.directory):
+            if filename.endswith(".py"):
+                if filename not in self.all_files:
+                    self.new_files.append(filename)
+                    self.all_files.append(filename)
+                    print(f'new file found! {filename}')
+
+    def file_not_new(self, file):
+        self.new_files.remove(file)
+
+    def get_new_files(self):
+        return self.new_files
+
+
+
+
 
 
 
@@ -202,6 +230,14 @@ def string_to_list(a_string_list):
     return ast.literal_eval(a_string_list)
 
 if __name__ == '__main__':
+    watcher = WatchDirectoy('/homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/WatchDirectory')
+    # while True:
+    #     watcher.check_new_file()
+    #     new_files = watcher.get_new_files()
+    #     for new_file in new_files:
+    #         print(f'used {new_file}')
+    #         watcher.file_not_new(new_file)
+    # sys.exit()
     options = "mw:h:p:n:"
     argumentList = sys.argv[1:]
     opts, args = getopt.getopt(argumentList, options)
@@ -217,6 +253,7 @@ if __name__ == '__main__':
             server_ip = all_ips[0]
             worker_ips = all_ips[:]
             worker_ips.remove(server_ip)
+            all_ips = str(all_ips).replace(' ', '')
         elif o == '-p':
             server_port = int(a)
         elif o == '-n':
@@ -233,11 +270,11 @@ if __name__ == '__main__':
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         ssh.connect(server_ip)
-        all_ips = str(all_ips).replace(' ', '')
-        stdin, stdout, stderr = ssh.exec_command(f'/homes/mlfrederiks/p1venv/bin/python /homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/Assignment3.py -m -h {all_ips} -p {server_port} -n {cores}')
+        stdin, stdout, stderr = ssh.exec_command(f'/homes/mlfrederiks/p1venv/bin/python '
+                                                 f'/homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/Assignment3.py '
+                                                 f'-m -h {all_ips} -p {server_port} -n {cores}')
         # Waarom werkt het alleen, met dit sluit die anders het script?
         for line in iter(stdout.readline, ""):
             print(line, end="")
         for line in iter(stderr.readline, ""):
             print(line, end="")
-#TODo timeout to server and worker
