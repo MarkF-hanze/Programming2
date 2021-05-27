@@ -5,6 +5,8 @@ import numpy as np
 import paramiko
 import getopt
 import ast
+import time
+import socket
 
 class QueueManager(BaseManager):
     pass
@@ -49,8 +51,9 @@ class Authkey(object):
         return self.authkey
         
 def fn(x):
-  #time.sleep(1)
+  time.sleep(0.1)
   return x**2
+
   
 class Server(object):
     def __init__(self, ip, port):
@@ -74,16 +77,19 @@ class Server(object):
             shared_job_q.put({'fn': fn, 'arg': d})
         results = Results()
         time.sleep(2)
+        timer = TimeOutTimer(300)
         while True:
             try:
                 results.update_results(shared_result_q)
                 print(f'got results {results.get_results()[-1]}')
+                timer.reset_time()
                 if len(results.get_results()) == len(data):
-                    with open("/homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/klaar.txt", "w") as file1:
-                      file1.write('Klaar!')
                     print("Got all results!")
                     break
             except queue.Empty:
+                if timer.over_time_out():
+                    print('To long no result exiting')
+                    break
                 time.sleep(1)
                 continue
         # Tell the client process no more data will be forthcoming
@@ -99,41 +105,26 @@ class WorkerFactory(object):
     def __init__(self, server_ip, server_port):
         self.server_ip = server_ip
         self.server_port = server_port
+        self.all_worker = []
 
     def setup_ssh(self, ips):
         for ip in ips:
             print(f'Setting up SSH {ip}')
             ssh = paramiko.SSHClient()
+            self.all_worker.append(ssh)
             ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
             ssh.connect(ip)
-            #channel = ssh.get_transport().open_session()
-            #channel = ssh.invoke_shell()
-            #channel = ssh.get_transport().open_session()
-            #channel.invoke_shell()
-            #stdin = channel.makefile('wb')
             print(f'setup_worker to connect to {self.server_ip} on {self.server_port}')
-            #stdin.write(f'''
-            #source p1venv/bin/activate
-            #cd /homes/mlfrederiks/PycharmProjects/Programming2/Assigment3
-            #python3 Assignment3.py -w -h {[self.server_ip]} -p {self.server_port}
-            #''')
-            #channel.sendall('source p1venv/bin/activate \n')
-            #channel.sendall('cd /homes/mlfrederiks/PycharmProjects/Programming2/Assigment3 \n')
-            #channel.sendall('ls \n')
-            #stdin, stdout, stderr 
-            ssh.exec_command(f'/homes/mlfrederiks/p1venv/bin/python /homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/Assignment3.py  -w -h {[self.server_ip]} -p {self.server_port}')
-            #for line in iter(stdout.readline, ""):
-            #  print(line, end="")
-            #print(channel.recv(1024))
-            #channel.sendall(f'python3 Assignment3.py -w -h {[self.server_ip]} -p {self.server_port} \n')
+            ssh.exec_command(f'/homes/mlfrederiks/p1venv/bin/python /homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/Assignment3.py  -w {ip} -h {[self.server_ip]} -p {self.server_port} -n {cores}')
             print('Done')
 
-    def setup_worker(self, num_processes):
-        worker = Worker(self.server_ip, self.server_port, num_processes)
+    def setup_worker(self, num_processes, worker_ip):
+        worker = Worker(self.server_ip, self.server_port, num_processes, worker_ip)
 
 # Hoe start je dit op een andere computer
 class Worker(object):
-    def __init__(self, ip, port, num_processes):
+    def __init__(self, ip, port, num_processes, worker_ip):
+        self.worker_ip = worker_ip
         self.message_manager = MessageManager('c')
         key = Authkey()
         self.manager = ServerQueueManager(address=(ip, port), authkey=key.get_key())
@@ -161,6 +152,7 @@ class Worker(object):
 
     def peon(self, job_q, result_q):
         my_name = mp.current_process().name
+        timer = TimeOutTimer(60)
         while True:
             try:
                 job = job_q.get_nowait()
@@ -171,19 +163,46 @@ class Worker(object):
                 else:
                     try:
                         result = job['fn'](job['arg'])
+                        timer.reset_time()
                         print("Peon %s Workwork on %s!" % (my_name, job['arg']))
-                        result_q.put({'job': job, 'result': result})
+                        result_q.put({'job': job, 'result': result, 'worker': self.worker_ip})
                     except NameError:
                         print("Can't find yer fun Bob!")
                         result_q.put({'job': job, 'result': 'F'})
-
             except queue.Empty:
+                if timer.over_time_out():
+                    return
                 print("sleepytime for", my_name)
                 time.sleep(1)
 
 
+class TimeOutTimer(object):
+    def __init__(self, max_time):
+        self.max_time = max_time
+        self.start_time = time.time()
+
+    def over_time_out(self):
+        return (time.time() - self.start_time) > self.max_time
+
+    def reset_time(self):
+        self.start_time = time.time()
+
+
+class WatchDirectoy(object):
+    def __init__(self, directory):
+        self.directory = directory
+
+
+
+
+def string_to_list(a_string_list):
+    a_string_list = a_string_list.replace('[', '["')
+    a_string_list = a_string_list.replace(']', '"]')
+    a_string_list = a_string_list.replace(',', '","')
+    return ast.literal_eval(a_string_list)
+
 if __name__ == '__main__':
-    options = "mwh:p:"
+    options = "mw:h:p:n:"
     argumentList = sys.argv[1:]
     opts, args = getopt.getopt(argumentList, options)
     mode = None
@@ -192,32 +211,33 @@ if __name__ == '__main__':
             mode = 'server'
         elif o == '-w':
             mode = 'worker'
+            ip_worker = a
         elif o == '-h':
-            a_clean = a.replace('[', '["')
-            a_clean = a_clean.replace(']', '"]')
-            a_clean = a_clean.replace(',', '","')
-            all_ips = ast.literal_eval(a_clean)
+            all_ips = string_to_list(a)
             server_ip = all_ips[0]
             worker_ips = all_ips[:]
             worker_ips.remove(server_ip)
         elif o == '-p':
             server_port = int(a)
+        elif o == '-n':
+            cores = int(a)
 
     worker_factory = WorkerFactory(server_ip, server_port)
     if mode == 'server':
         worker_factory.setup_ssh(worker_ips)
         server = Server(server_ip, server_port)
     elif mode == 'worker':
-        # TODO dit niet hardcoden
-        worker_factory.setup_worker(4)
+        worker_factory.setup_worker(cores, ip_worker)
     else:
         # Start SSH of server
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         ssh.connect(server_ip)
-        all_ips = str(all_ips).replace(' ','')
-        stdin, stdout, stderr  = ssh.exec_command(f'/homes/mlfrederiks/p1venv/bin/python /homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/Assignment3.py -m -h {all_ips} -p {server_port}')
+        all_ips = str(all_ips).replace(' ', '')
+        stdin, stdout, stderr = ssh.exec_command(f'/homes/mlfrederiks/p1venv/bin/python /homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/Assignment3.py -m -h {all_ips} -p {server_port} -n {cores}')
         # Waarom werkt het alleen, met dit sluit die anders het script?
         for line in iter(stdout.readline, ""):
             print(line, end="")
-
+        for line in iter(stderr.readline, ""):
+            print(line, end="")
+#TODo timeout to server and worker
