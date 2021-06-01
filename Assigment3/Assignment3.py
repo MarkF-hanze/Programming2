@@ -8,6 +8,7 @@ import ast
 import time
 import socket
 import os
+import importlib
 
 
 class QueueManager(BaseManager):
@@ -261,10 +262,11 @@ class WatchDirectoy(object):
                     print(f'new file found! {filename}')
 
     def file_not_new(self, file):
+        file = file.split('/')[-1]
         self.new_files.remove(file)
 
     def get_new_files(self):
-        return self.new_files
+        return [f"{self.directory}/{x}" for x in self.new_files]
 
 
 def string_to_list(a_string_list):
@@ -276,50 +278,49 @@ def string_to_list(a_string_list):
 
 if __name__ == '__main__':
     watcher = WatchDirectoy('/homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/WatchDirectory')
-    # while True:
-    #     watcher.check_new_file()
-    #     new_files = watcher.get_new_files()
-    #     for new_file in new_files:
-    #         print(f'used {new_file}')
-    #         watcher.file_not_new(new_file)
-    # sys.exit()
-    options = "mw:h:p:n:"
-    argumentList = sys.argv[1:]
-    opts, args = getopt.getopt(argumentList, options)
-    mode = None
-    for o, a in opts:
-        if o == '-m':
-            mode = 'server'
-        elif o == '-w':
-            mode = 'worker'
-            ip_worker = a
-        elif o == '-h':
-            all_ips = string_to_list(a)
-            server_ip = all_ips[0]
-            worker_ips = all_ips[:]
-            worker_ips.remove(server_ip)
-            all_ips = str(all_ips).replace(' ', '')
-        elif o == '-p':
-            server_port = int(a)
-        elif o == '-n':
-            cores = int(a)
+    #TODO dit laten checken doorlopen ofzo
+    watcher.check_new_file()
+    new_files = watcher.get_new_files()
+    for new_file in new_files:
+        importlib.import_module(new_file)
+        watcher.file_not_new(new_file)
+        options = "mw:h:p:n:"
+        argumentList = sys.argv[1:]
+        opts, args = getopt.getopt(argumentList, options)
+        mode = None
+        for o, a in opts:
+            if o == '-m':
+                mode = 'server'
+            elif o == '-w':
+                mode = 'worker'
+                ip_worker = a
+            elif o == '-h':
+                all_ips = string_to_list(a)
+                server_ip = all_ips[0]
+                worker_ips = all_ips[:]
+                worker_ips.remove(server_ip)
+                all_ips = str(all_ips).replace(' ', '')
+            elif o == '-p':
+                server_port = int(a)
+            elif o == '-n':
+                cores = int(a)
 
-    worker_factory = WorkerFactory(server_ip, server_port)
-    if mode == 'server':
-        worker_factory.setup_ssh(worker_ips)
-        server = Server(server_ip, server_port, worker_ips)
-    elif mode == 'worker':
-        worker_factory.setup_worker(cores, ip_worker)
-    else:
-        # Start SSH of server
-        ssh = paramiko.SSHClient()
-        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect(server_ip)
-        stdin, stdout, stderr = ssh.exec_command(f'/homes/mlfrederiks/p1venv/bin/python '
-                                                 f'/homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/Assignment3.py '
-                                                 f'-m -h {all_ips} -p {server_port} -n {cores}')
-        # Waarom werkt het alleen, met dit sluit die anders het script?
-        for line in iter(stdout.readline, ""):
-            print(line, end="")
-        for line in iter(stderr.readline, ""):
-            print(line, end="")
+        worker_factory = WorkerFactory(server_ip, server_port)
+        if mode == 'server':
+            worker_factory.setup_ssh(worker_ips)
+            server = Server(server_ip, server_port, worker_ips)
+        elif mode == 'worker':
+            worker_factory.setup_worker(cores, ip_worker)
+        else:
+            # Start SSH of server
+            ssh = paramiko.SSHClient()
+            ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+            ssh.connect(server_ip)
+            stdin, stdout, stderr = ssh.exec_command(f'/homes/mlfrederiks/p1venv/bin/python '
+                                                     f'/homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/Assignment3.py '
+                                                     f'-m -h {all_ips} -p {server_port} -n {cores}')
+            # Waarom werkt het alleen, met dit sluit die anders het script?
+            for line in iter(stdout.readline, ""):
+                print(line, end="")
+            for line in iter(stderr.readline, ""):
+                print(line, end="")
