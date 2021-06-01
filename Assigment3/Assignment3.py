@@ -9,7 +9,8 @@ import time
 import socket
 import os
 import importlib
-
+from WatchDirectory import script1
+from collections import defaultdict
 
 class QueueManager(BaseManager):
     pass
@@ -44,6 +45,9 @@ class Results(object):
 
     def get_results(self):
         return self.results
+    
+    def remove_results(self, result):
+        self.results.remove(result)
 
 
 class PoisonPill(object):
@@ -62,11 +66,13 @@ class Authkey(object):
         return self.authkey
 
 
-def fn(x):
-    time.sleep(1)
-    return x ** 2
-
-
+#def shuffling(self, map_list):
+#      word_count = defaultdict(list)
+#      for key, value in map_list:
+#          word_count[key].append(value)
+#      return word_count
+      
+      
 class Server(object):
     def __init__(self, ip, port, worker_ips):
         self.working_jobs = KeepWorkingJobs(worker_ips)
@@ -88,42 +94,66 @@ class Server(object):
         # TODO task facotry maken met dit erin
         ID_to_func = {}
         unique_num = 0
-        data = np.arange(0, 1000)
-        for d in data:
+        for d in script1.Data('32651208'):
             unique_num += 1
-            ID_to_func[unique_num] = (fn, d)
-            shared_job_q.put({'fn': fn, 'arg': d, 'ID': unique_num})
+            ID_to_func[unique_num] = (script1.mapper, d)
+            shared_job_q.put({'fn': script1.mapper, 'arg': d, 'ID': unique_num, 'type': 'mapper'})
+        to_get_results = unique_num
         results = Results()
         time.sleep(2)
-        timer = TimeOutTimer(300)
+        timer = TimeOutTimer(600)
+        result_count = 0
+        to_get_results_2 = None 
+        map_count = 0
+        intermediate__results = defaultdict(list)
         while True:
             # A job got taken!
-            #try:
             while not shared_active_task_q.empty():
                 taken_job = shared_active_task_q.get_nowait()
-                self.working_jobs.add_job(taken_job['worker'], taken_job['job']['ID'])
-            #except queue.Empty:
-                #pass            
+                self.working_jobs.add_job(taken_job['worker'], taken_job['job']['ID'])     
+                #print(self.working_jobs.get_active_jobs())
+                #print(f"Gave job {taken_job['job']['ID']} to worker {taken_job['worker']}")
+                #print(f'gave {gave_count}')
             # A job got returned!
-            #try:
-            
             while not shared_result_q.empty():
                 curent_results = shared_result_q.get_nowait()
-                results.update_results(curent_results)
                 self.working_jobs.remove_job(curent_results['worker'], curent_results['job']['ID'])
+                #print(self.working_jobs.get_active_jobs())
+                # Shuffling 
+                if curent_results['job']['type'] == 'mapper':
+                    # TODO dit niet hardcoden
+                    if curent_results['result'] != 'Error404':
+                      for result in curent_results['result']:
+                          intermediate__results[result[0]].append(result[1])
+                    map_count+=1
+                else:
+                    results.update_results(curent_results)
+                    result_count+=1
+                #print(f"Got result {curent_results['job']['ID']} from worker {curent_results['worker']}")
+                #print(f'got {back_count}')
                 timer.reset_time()
-            test_dic = {}
-            for nuc in self.working_jobs.get_active_jobs():
-                test_dic[nuc] = [ID_to_func[x] for x in self.working_jobs.get_active_jobs()[nuc]]
-            print(test_dic)
-            if len(results.get_results()) == len(data):
+            # Start the reducers
+            if map_count == to_get_results:
+                to_get_results_2 = 0
+                map_count = 0
+                print('GO!')
+                for d in intermediate__results:
+                    unique_num += 1
+                    ID_to_func[unique_num] = (script1.reducer, d)
+                    shared_job_q.put({'fn': script1.reducer, 'arg': (d,intermediate__results[d]), 'ID': unique_num, 'type': 'reducer'}) 
+                    to_get_results_2 += 1 
+            if result_count == to_get_results_2:
+                  print([x['result'] for x in results.get_results()])
                   print("Got all results!")
                   break
-            #except (queue.Empty, ValueError):
             if timer.over_time_out():
+                for line in iter(worker_factory.stdout.readline, ""):
+                  print(line, end="")
+                for line in iter(worker_factory.stderr.readline, ""):
+                  print(line, end="")
                 print('To long no result exiting')
                 break
-            time.sleep(1)
+            time.sleep(2)
         # Tell the client process no more data will be forthcoming
         shared_job_q.put(self.poison_pill.get_pill())
         # Sleep a bit before shutting down the server - to give clients time to
@@ -147,33 +177,34 @@ class WorkerFactory(object):
             ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
             ssh.connect(ip)
             print(f'setup_worker to connect to {self.server_ip} on {self.server_port}')
-            ssh.exec_command(
+            stdin, self.stdout, self.stderr = ssh.exec_command(
                 f'/homes/mlfrederiks/p1venv/bin/python /homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/Assignment3.py  -w {ip} -h {[self.server_ip]} -p {self.server_port} -n {cores}')
             print('Done')
+
 
     def setup_worker(self, num_processes, worker_ip):
         worker = Worker(self.server_ip, self.server_port, num_processes, worker_ip)
 
 
-# Hoe start je dit op een andere computer
 class Worker(object):
     def __init__(self, ip, port, num_processes, worker_ip):
         self.worker_ip = worker_ip
         self.message_manager = MessageManager('c')
         key = Authkey()
         self.manager = ServerQueueManager(address=(ip, port), authkey=key.get_key())
+        _timer = time.time()
         while True:
             try:
                 self.manager.connect()
                 break
             except ConnectionRefusedError:
-                pass
+                if (time.time() - _timer) > 60:
+                    break
         print('Client connected to %s:%s' % (ip, port))
         self.poison_pill = PoisonPill()
         self.run_workers(num_processes)
 
     def run_workers(self, num_processes):
-
         processes = []
         for p in range(num_processes):
             temP = mp.Process(target=self.peon)
@@ -192,25 +223,29 @@ class Worker(object):
         while True:
             try:
                 job = job_q.get_nowait()
-                active_task_q.put({'job': job, 'worker': self.worker_ip})
                 if job == self.poison_pill.get_pill():
                     job_q.put(self.poison_pill.get_pill())
                     print("Aaaaaaargh", my_name)
                     return
                 else:
                     try:
-                        result = job['fn'](job['arg'])
+                        print(f'started_working {job}')
+                        active_task_q.put({'job': job, 'worker': self.worker_ip})                       
+                        # TODO dit met meerdere arguments (dus 1 worker werkt met functies tegelijk)
+                        print(f'Ok now really')
+                        result = job['fn'](job['arg'][0], job['arg'][1])
+                        
+                        print(f'Ended job {job}')
                         timer.reset_time()
-                        print("Peon %s Workwork on %s!" % (my_name, job['arg']))
                         result_q.put({'job': job, 'result': result, 'worker': self.worker_ip})
-                    except NameError:
-                        print("Can't find yer fun Bob!")
-                        result_q.put({'job': job, 'result': 'F'})
+                    except Exception  as e:
+                         result_q.put({'job': job, 'result': 'Error404' , 'worker': self.worker_ip})
             except queue.Empty:
                 if timer.over_time_out():
                     return
                 print("sleepytime for", my_name)
                 time.sleep(1)
+                
                 
 class KeepWorkingJobs(object):
     def __init__(self, workers):
@@ -277,13 +312,12 @@ def string_to_list(a_string_list):
 
 
 if __name__ == '__main__':
-    watcher = WatchDirectoy('/homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/WatchDirectory')
+    path = '/homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/WatchDirectory'
+    watcher = WatchDirectoy(path)
     #TODO dit laten checken doorlopen ofzo
     watcher.check_new_file()
     new_files = watcher.get_new_files()
     for new_file in new_files:
-        importlib.import_module(new_file)
-        watcher.file_not_new(new_file)
         options = "mw:h:p:n:"
         argumentList = sys.argv[1:]
         opts, args = getopt.getopt(argumentList, options)
