@@ -12,6 +12,7 @@ import importlib
 from WatchDirectory import script1
 from collections import defaultdict
 
+
 class QueueManager(BaseManager):
     pass
 
@@ -45,7 +46,7 @@ class Results(object):
 
     def get_results(self):
         return self.results
-    
+
     def remove_results(self, result):
         self.results.remove(result)
 
@@ -66,13 +67,13 @@ class Authkey(object):
         return self.authkey
 
 
-#def shuffling(self, map_list):
+# def shuffling(self, map_list):
 #      word_count = defaultdict(list)
 #      for key, value in map_list:
 #          word_count[key].append(value)
 #      return word_count
-      
-      
+
+
 class Server(object):
     def __init__(self, ip, port, worker_ips):
         self.working_jobs = KeepWorkingJobs(worker_ips)
@@ -101,19 +102,19 @@ class Server(object):
         to_get_results = unique_num
         results = Results()
         time.sleep(2)
-        timer = TimeOutTimer(600)
+        timer = TimeOutTimer(30)
         result_count = 0
-        to_get_results_2 = None 
+        to_get_results_2 = None
         map_count = 0
         intermediate__results = defaultdict(list)
         while True:
             # A job got taken!
             while not shared_active_task_q.empty():
                 taken_job = shared_active_task_q.get_nowait()
-                self.working_jobs.add_job(taken_job['worker'], taken_job['job']['ID'])     
+                self.working_jobs.add_job(taken_job['worker'], taken_job['job']['ID'])
                 #print(self.working_jobs.get_active_jobs())
-                #print(f"Gave job {taken_job['job']['ID']} to worker {taken_job['worker']}")
-                #print(f'gave {gave_count}')
+                # print(f"Gave job {taken_job['job']['ID']} to worker {taken_job['worker']}")
+                # print(f'gave {gave_count}')
             # A job got returned!
             while not shared_result_q.empty():
                 curent_results = shared_result_q.get_nowait()
@@ -123,14 +124,14 @@ class Server(object):
                 if curent_results['job']['type'] == 'mapper':
                     # TODO dit niet hardcoden
                     if curent_results['result'] != 'Error404':
-                      for result in curent_results['result']:
-                          intermediate__results[result[0]].append(result[1])
-                    map_count+=1
+                        for result in curent_results['result']:
+                            intermediate__results[result[0]].append(result[1])
+                    map_count += 1
                 else:
                     results.update_results(curent_results)
-                    result_count+=1
-                #print(f"Got result {curent_results['job']['ID']} from worker {curent_results['worker']}")
-                #print(f'got {back_count}')
+                    result_count += 1
+                # print(f"Got result {curent_results['job']['ID']} from worker {curent_results['worker']}")
+                # print(f'got {back_count}')
                 timer.reset_time()
             # Start the reducers
             if map_count == to_get_results:
@@ -140,17 +141,18 @@ class Server(object):
                 for d in intermediate__results:
                     unique_num += 1
                     ID_to_func[unique_num] = (script1.reducer, d)
-                    shared_job_q.put({'fn': script1.reducer, 'arg': (d,intermediate__results[d]), 'ID': unique_num, 'type': 'reducer'}) 
-                    to_get_results_2 += 1 
+                    shared_job_q.put({'fn': script1.reducer, 'arg': (d, intermediate__results[d]), 'ID': unique_num,
+                                      'type': 'reducer'})
+                    to_get_results_2 += 1
             if result_count == to_get_results_2:
-                  print([x['result'] for x in results.get_results()])
-                  print("Got all results!")
-                  break
+                print([x['result'] for x in results.get_results()])
+                print("Got all results!")
+                break
             if timer.over_time_out():
                 for line in iter(worker_factory.stdout.readline, ""):
-                  print(line, end="")
+                    print(line, end="")
                 for line in iter(worker_factory.stderr.readline, ""):
-                  print(line, end="")
+                    print(line, end="")
                 print('To long no result exiting')
                 break
             time.sleep(2)
@@ -180,7 +182,6 @@ class WorkerFactory(object):
             stdin, self.stdout, self.stderr = ssh.exec_command(
                 f'/homes/mlfrederiks/p1venv/bin/python /homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/Assignment3.py  -w {ip} -h {[self.server_ip]} -p {self.server_port} -n {cores}')
             print('Done')
-
 
     def setup_worker(self, num_processes, worker_ip):
         worker = Worker(self.server_ip, self.server_port, num_processes, worker_ip)
@@ -230,23 +231,23 @@ class Worker(object):
                 else:
                     try:
                         print(f'started_working {job}')
-                        active_task_q.put({'job': job, 'worker': self.worker_ip})                       
+                        active_task_q.put({'job': job, 'worker': self.worker_ip})
                         # TODO dit met meerdere arguments (dus 1 worker werkt met functies tegelijk)
                         print(f'Ok now really')
                         result = job['fn'](job['arg'][0], job['arg'][1])
-                        
+
                         print(f'Ended job {job}')
                         timer.reset_time()
                         result_q.put({'job': job, 'result': result, 'worker': self.worker_ip})
                     except Exception  as e:
-                         result_q.put({'job': job, 'result': 'Error404' , 'worker': self.worker_ip})
+                        result_q.put({'job': job, 'result': 'Error404', 'worker': self.worker_ip})
             except queue.Empty:
                 if timer.over_time_out():
                     return
                 print("sleepytime for", my_name)
                 time.sleep(1)
-                
-                
+
+
 class KeepWorkingJobs(object):
     def __init__(self, workers):
         self.active_workers_jobs = {}
@@ -255,10 +256,10 @@ class KeepWorkingJobs(object):
 
     def add_job(self, worker, job):
         self.active_workers_jobs[worker].append(int(job))
-        
+
     def remove_job(self, worker, job):
-         self.active_workers_jobs[worker].remove(int(job))
-         
+        self.active_workers_jobs[worker].remove(int(job))
+
     def get_active_jobs(self):
         return self.active_workers_jobs
 
@@ -314,7 +315,7 @@ def string_to_list(a_string_list):
 if __name__ == '__main__':
     path = '/homes/mlfrederiks/PycharmProjects/Programming2/Assigment3/WatchDirectory'
     watcher = WatchDirectoy(path)
-    #TODO dit laten checken doorlopen ofzo
+    # TODO dit laten checken doorlopen ofzo
     watcher.check_new_file()
     new_files = watcher.get_new_files()
     for new_file in new_files:
