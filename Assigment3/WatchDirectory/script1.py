@@ -27,7 +27,6 @@ def get_citations(original_id):
 class Data:
     def __init__(self, id):
         self.data = get_citations(id)
-        #self.data = [download_abstract(x) for x in data]
         self.current = -1
 
     def __iter__(self):
