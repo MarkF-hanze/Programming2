@@ -101,34 +101,37 @@ class Server(object):
         self.timer = TimeOutTimer(30)
         # Start heartbeat
         self.shared_heartbeat_q.put(self.working_jobs)
+        self.dead_workers = []
         self.runserver()
 
-    def _check_jobs(self):
+#    def _check_jobs(self):
         # A job got taken!
-        while not self.shared_active_task_q.empty():
-            taken_job = self.shared_active_task_q.get_nowait()
-            self.working_jobs.add_job(taken_job['worker'], taken_job['job']['ID'])
-            # print(self.working_jobs.get_active_jobs())
+        #while not self.shared_active_task_q.empty():
+         #   taken_job = self.shared_active_task_q.get_nowait()
+         #   self.working_jobs.add_job(taken_job['worker'], taken_job['job']['ID'])
+         #   print(self.working_jobs.get_active_jobs())
             # print(f"Gave job {taken_job['job']['ID']} to worker {taken_job['worker']}")
             # print(f'gave {gave_count}')
         # A job got returned!
-        while not self.shared_result_q.empty():
-            curent_results = self.shared_result_q.get_nowait()
-            self.working_jobs.remove_job(curent_results['worker'], curent_results['job']['ID'])
-            print(self.working_jobs.get_active_jobs())
+        #while not self.shared_result_q.empty():
+          #  curent_results = self.shared_result_q.get_nowait()
+          #  print('REMOVING')
+          #  print(self.working_jobs.get_active_jobs())
+          #  self.working_jobs.remove_job(curent_results['worker'], curent_results['job']['ID'])
+          #  print(self.working_jobs.get_active_jobs())
             # Shuffling
-            if curent_results['job']['type'] == 'mapper':
-                # TODO dit niet hardcoden
-                if curent_results['result'] != 'Error404':
-                    for result in curent_results['result']:
-                        self.intermediate__results[result[0]].append(result[1])
-                self.map_count += 1
-            else:
-                self.results.update_results(curent_results)
-                self.result_count += 1
+        #    if curent_results['job']['type'] == 'mapper':
+        #        # TODO dit niet hardcoden
+        #        if curent_results['result'] != 'Error404':
+          #          for result in curent_results['result']:
+          #              self.intermediate__results[result[0]].append(result[1])
+          #      self.map_count += 1
+          #  else:
+          #      self.results.update_results(curent_results)
+          #      self.result_count += 1
             # print(f"Got result {curent_results['job']['ID']} from worker {curent_results['worker']}")
             # print(f'got {back_count}')
-            self.timer.reset_time()
+           # self.timer.reset_time()
 
     def runserver(self):
         # Put the functions in a queue
@@ -136,14 +139,25 @@ class Server(object):
         unique_num = 0
         for d in self.script.Data('32651208'):
             unique_num += 1
-            ID_to_func[unique_num] = (self.script.mapper, d)
+            ID_to_func[unique_num] = {'arg': d, 'type': 'mapper'}
             self.shared_job_q.put({'arg': d, 'ID': unique_num, 'type': 'mapper'})
         to_get_results = unique_num
         time.sleep(2)
         to_get_results_2 = None
         while True:
-            # CHeck how the jobs are going
-            self._check_jobs()
+            # Check how the jobs are going
+            while not self.shared_result_q.empty():
+                curent_results = self.shared_result_q.get_nowait()
+                # Shuffling
+                if curent_results['job']['type'] == 'mapper':
+                    if curent_results['result'] != 'Error404':
+                        for result in curent_results['result']:
+                            self.intermediate__results[result[0]].append(result[1])
+                    self.map_count += 1
+                else:
+                    self.results.update_results(curent_results)
+                    self.result_count += 1
+                self.timer.reset_time()          
             # Start the reducers
             if self.map_count == to_get_results:
                 to_get_results_2 = 0
@@ -151,27 +165,40 @@ class Server(object):
                 # Put the intermediate keys in the queue
                 for d in self.intermediate__results:
                     unique_num += 1
-                    ID_to_func[unique_num] = (self.script.reducer, d)
+                    ID_to_func[unique_num] = {'arg': (d, self.intermediate__results[d]), 'type': 'reducer'}
                     self.shared_job_q.put({'arg': (d, self.intermediate__results[d]), 'ID': unique_num,
                                       'type': 'reducer'})
                     to_get_results_2 += 1
             if self.result_count == to_get_results_2:
                 # print([x['result'] for x in results.get_results()])
+                self.working_jobs = self.shared_heartbeat_q.get_nowait()
+                #print(self.working_jobs.get_status())
+                #print(self.working_jobs.active_workers_jobs)
                 print("Got all results!")
                 break
             if self.timer.over_time_out():
                 print('To long no result exiting')
                 break
-            # Check if workers are dead
-            print(self.working_jobs.get_status())
-            time.sleep(2)
             try:
                 self.working_jobs = self.shared_heartbeat_q.get_nowait()
-                print(self.working_jobs.get_status())
-                print('Niet Rip')
+                #print(self.working_jobs.get_status())
+                #print(self.working_jobs.active_workers_jobs)
+                timings = self.working_jobs.get_status()
+                self.shared_heartbeat_q.put(self.working_jobs)
+                for work in timings:
+                    if time.time() - timings[work] > 40:
+                      active_jobs_worker = self.working_jobs.get_active_jobs()[work]
+                      self.dead_workers.append(work)
+                      for uneq_id in active_jobs_worker:
+                          print(f'RIP to worker {work}')
+                          print(uneq_id)
+                          print(active_jobs_worker)
+                          self.shared_job_q.put({'arg': ID_to_func[uneq_id]['arg'], 'ID': uneq_id,
+                                                  'type': ID_to_func[uneq_id]['type']})
+                    
             except queue.Empty:
-                print('Rip')
                 pass
+            time.sleep(2)
         # Tell the client process no more data will be forthcoming
         self.shared_job_q.put(self.poison_pill.get_pill())
         self.shared_heartbeat_q.put(self.poison_pill.get_pill())
@@ -251,8 +278,28 @@ class Worker(object):
                 self.heartbeat_q.put(roster)
             except queue.Empty:
                 pass
-            time.sleep(np.random.randint(10, 20))
+            time.sleep(np.random.randint(5, 20))
+            
+    def job_to_roster(self, taken_job):
+        while True:
+            try:
+                roster = self.heartbeat_q.get_nowait()
+                roster.add_job(self.worker_ip, taken_job['ID'])
+                self.heartbeat_q.put(roster)
+                return
+            except queue.Empty:
+                pass
 
+    def remove_job_roster(self, result):
+            while True:
+                try:
+                    roster = self.heartbeat_q.get_nowait()
+                    roster.remove_job(self.worker_ip, result['job']['ID'])
+                    self.heartbeat_q.put(roster)
+                    return
+                except queue.Empty:
+                    pass
+    
     def peon(self):
         job_q = self.manager.get_job_q()
         result_q = self.manager.get_result_q()
@@ -267,20 +314,21 @@ class Worker(object):
                     print("Aaaaaaargh", my_name)
                     return
                 else:
+                    self.job_to_roster(job)
                     try:
                         if job['type'] == 'mapper':
                             func_work = self.script.mapper
                         elif job['type'] == 'reducer':
                             func_work = self.script.reducer
                         print(f'started_working {job}')
-                        active_task_q.put({'job': job, 'worker': self.worker_ip})
+                        #active_task_q.put({'job': job, 'worker': self.worker_ip})
                         # TODO dit met meerdere arguments (dus 1 worker werkt met functies tegelijk)
                         print(f'Ok now really')
                         result = func_work(job['arg'][0], job['arg'][1])
-
                         print(f'Ended job {job}')
                         timer.reset_time()
                         result_q.put({'job': job, 'result': result, 'worker': self.worker_ip})
+                        self.remove_job_roster({'job': job, 'worker': self.worker_ip})
                     except Exception  as e:
                         result_q.put({'job': job, 'result': 'Error404', 'worker': self.worker_ip})
             except queue.Empty:
@@ -301,7 +349,7 @@ class KeepWorkingJobs(object):
     def add_job(self, worker, job):
         self.active_workers_jobs[worker].append(int(job))
 
-    def remove_job(self, worker, job):
+    def remove_job(self, worker, job):    
         self.active_workers_jobs[worker].remove(int(job))
 
     def get_active_jobs(self):
@@ -312,7 +360,6 @@ class KeepWorkingJobs(object):
 
     def set_status(self, worker):
         self.status[worker] = time.time()
-
 
 class TimeOutTimer(object):
     def __init__(self, max_time):
